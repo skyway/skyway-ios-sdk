@@ -1,0 +1,357 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7167E0981EE8F733002488C3 /* PeerListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7167E0971EE8F733002488C3 /* PeerListViewController.m */; };
+		718AE55F1EE8D286008E5B0B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 718AE55E1EE8D286008E5B0B /* main.m */; };
+		718AE5621EE8D286008E5B0B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 718AE5611EE8D286008E5B0B /* AppDelegate.m */; };
+		718AE5651EE8D286008E5B0B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 718AE5641EE8D286008E5B0B /* ViewController.m */; };
+		718AE5681EE8D286008E5B0B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 718AE5661EE8D286008E5B0B /* Main.storyboard */; };
+		718AE56A1EE8D286008E5B0B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 718AE5691EE8D286008E5B0B /* Assets.xcassets */; };
+		718AE56D1EE8D286008E5B0B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 718AE56B1EE8D286008E5B0B /* LaunchScreen.storyboard */; };
+		71CC92A11EEA68D600CD4185 /* image.png in Resources */ = {isa = PBXBuildFile; fileRef = 71CC92A01EEA68D600CD4185 /* image.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		7167E0951EE8F6A2002488C3 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		7167E0961EE8F733002488C3 /* PeerListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PeerListViewController.h; sourceTree = "<group>"; };
+		7167E0971EE8F733002488C3 /* PeerListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PeerListViewController.m; sourceTree = "<group>"; };
+		718AE55A1EE8D286008E5B0B /* eclwebrtc-ios-sample-p2p-textchat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "eclwebrtc-ios-sample-p2p-textchat.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		718AE55E1EE8D286008E5B0B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		718AE5601EE8D286008E5B0B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		718AE5611EE8D286008E5B0B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		718AE5631EE8D286008E5B0B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		718AE5641EE8D286008E5B0B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		718AE5671EE8D286008E5B0B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		718AE5691EE8D286008E5B0B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		718AE56C1EE8D286008E5B0B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		718AE56E1EE8D286008E5B0B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		71CC92A01EEA68D600CD4185 /* image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = image.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		718AE5571EE8D286008E5B0B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		718AE5511EE8D286008E5B0B = {
+			isa = PBXGroup;
+			children = (
+				718AE55C1EE8D286008E5B0B /* eclwebrtc-ios-sample-p2p-textchat */,
+				718AE55B1EE8D286008E5B0B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		718AE55B1EE8D286008E5B0B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				718AE55A1EE8D286008E5B0B /* eclwebrtc-ios-sample-p2p-textchat.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		718AE55C1EE8D286008E5B0B /* eclwebrtc-ios-sample-p2p-textchat */ = {
+			isa = PBXGroup;
+			children = (
+				718AE5601EE8D286008E5B0B /* AppDelegate.h */,
+				718AE5611EE8D286008E5B0B /* AppDelegate.m */,
+				718AE5631EE8D286008E5B0B /* ViewController.h */,
+				718AE5641EE8D286008E5B0B /* ViewController.m */,
+				7167E0961EE8F733002488C3 /* PeerListViewController.h */,
+				7167E0971EE8F733002488C3 /* PeerListViewController.m */,
+				718AE5661EE8D286008E5B0B /* Main.storyboard */,
+				718AE5691EE8D286008E5B0B /* Assets.xcassets */,
+				718AE56B1EE8D286008E5B0B /* LaunchScreen.storyboard */,
+				718AE56E1EE8D286008E5B0B /* Info.plist */,
+				718AE55D1EE8D286008E5B0B /* Supporting Files */,
+			);
+			path = "eclwebrtc-ios-sample-p2p-textchat";
+			sourceTree = "<group>";
+		};
+		718AE55D1EE8D286008E5B0B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				71CC92A01EEA68D600CD4185 /* image.png */,
+				718AE55E1EE8D286008E5B0B /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		718AE5591EE8D286008E5B0B /* eclwebrtc-ios-sample-p2p-textchat */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 718AE5711EE8D286008E5B0B /* Build configuration list for PBXNativeTarget "eclwebrtc-ios-sample-p2p-textchat" */;
+			buildPhases = (
+				718AE5561EE8D286008E5B0B /* Sources */,
+				718AE5571EE8D286008E5B0B /* Frameworks */,
+				718AE5581EE8D286008E5B0B /* Resources */,
+				7167E0951EE8F6A2002488C3 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "eclwebrtc-ios-sample-p2p-textchat";
+			productName = "eclwebrtc-ios-sample-p2p-textchat";
+			productReference = 718AE55A1EE8D286008E5B0B /* eclwebrtc-ios-sample-p2p-textchat.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		718AE5521EE8D286008E5B0B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "NTT Communications";
+				TargetAttributes = {
+					718AE5591EE8D286008E5B0B = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 718AE5551EE8D286008E5B0B /* Build configuration list for PBXProject "eclwebrtc-ios-sample-p2p-textchat" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 718AE5511EE8D286008E5B0B;
+			productRefGroup = 718AE55B1EE8D286008E5B0B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				718AE5591EE8D286008E5B0B /* eclwebrtc-ios-sample-p2p-textchat */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		718AE5581EE8D286008E5B0B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				718AE56D1EE8D286008E5B0B /* LaunchScreen.storyboard in Resources */,
+				718AE56A1EE8D286008E5B0B /* Assets.xcassets in Resources */,
+				718AE5681EE8D286008E5B0B /* Main.storyboard in Resources */,
+				71CC92A11EEA68D600CD4185 /* image.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		718AE5561EE8D286008E5B0B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				718AE5651EE8D286008E5B0B /* ViewController.m in Sources */,
+				718AE5621EE8D286008E5B0B /* AppDelegate.m in Sources */,
+				7167E0981EE8F733002488C3 /* PeerListViewController.m in Sources */,
+				718AE55F1EE8D286008E5B0B /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		718AE5661EE8D286008E5B0B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				718AE5671EE8D286008E5B0B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		718AE56B1EE8D286008E5B0B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				718AE56C1EE8D286008E5B0B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		718AE56F1EE8D286008E5B0B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		718AE5701EE8D286008E5B0B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		718AE5721EE8D286008E5B0B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = "eclwebrtc-ios-sample-p2p-textchat/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ntt.ecl-webrtc-ios-sample-p2p-text";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		718AE5731EE8D286008E5B0B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = "eclwebrtc-ios-sample-p2p-textchat/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ntt.ecl-webrtc-ios-sample-p2p-text";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		718AE5551EE8D286008E5B0B /* Build configuration list for PBXProject "eclwebrtc-ios-sample-p2p-textchat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				718AE56F1EE8D286008E5B0B /* Debug */,
+				718AE5701EE8D286008E5B0B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		718AE5711EE8D286008E5B0B /* Build configuration list for PBXNativeTarget "eclwebrtc-ios-sample-p2p-textchat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				718AE5721EE8D286008E5B0B /* Debug */,
+				718AE5731EE8D286008E5B0B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 718AE5521EE8D286008E5B0B /* Project object */;
+}
