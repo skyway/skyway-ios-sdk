@@ -5,6 +5,10 @@
 #import <Foundation/Foundation.h>
 #import "SKWCommon.h"
 
+/**
+ * \file SKWMediaConstraints.h
+ */
+
 //! \~japanese カメラ位置
 //! \~english Device camera position
 //! \~

@@ -4,22 +4,29 @@
 ////////////////////////////////////////////////////////////////////////
 #import "SKWConnection.h"
 
+/**
+ * \file SKWConnectOption.h
+ */
+
 //! \~japanese SKWPeer connect オプション
 //! \~english SKWPeer connect options
 //! \~
 @interface SKWConnectOption : NSObject < NSCopying >
 
-//! \~japanese ストリームのラベルを指定します
-//! \~english The optional label passed in or assigned by PeerJS when the connection was initiated.
+//! \~japanese 接続先のPeer IDを識別するのに利用するラベルを指定します。
+//! \~english Label to easily identify the connection on either peer.
 //! \~
 @property (nonatomic) NSString* __nullable label;
 
-//! \~japanese メタデータを指定します
-//! \~english Any type of metadata associated with the connection, passed in by whoever initiated the connection.
+//! \~japanese メタデータを指定します。
+//! コネクションに関連付けされるメタデータで、コネクションを開始したpeerに渡されます。
+//! \~english
+//! Any type of metadata associated with the connection,
+//! passed in by whoever initiated the connection.
 //! \~
 @property (nonatomic) NSString* __nullable metadata;
 
-//! \~japanese データシリアライズ種別を指定します
+//! \~japanese データシリアライズ種別を指定します。
 //! \~english The serialization format of the data sent over the connection.
 //! \~
 @property (nonatomic) SKWSerializationEnum serialization;

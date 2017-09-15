@@ -4,6 +4,10 @@
 ////////////////////////////////////////////////////////////////////////
 #import <Foundation/Foundation.h>
 
+/**
+ * \file SKWDataChannel.h
+ */
+
 //! \~japanese データチャンネルオブジェクトです
 //! \~english Data channel
 //! \~

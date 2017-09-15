@@ -4,27 +4,32 @@
 ////////////////////////////////////////////////////////////////////////
 #import "SKWRoom.h"
 
+/**
+ * \file SKWMeshRoom.h
+ */
+
 @class SKWMediaStream;
 
-//! \~japanese メッシュルームクラス
-//! \~english
+//! \~japanese メッシュ接続でのルームを提供するルームクラスです。
+//! \~english Mesh room class
 //! \~
 //!
 //! \~japanese
-//! ピアとの通信に複数のメディア接続とデータ接続を確立したルームです。
+//! メッシュ接続でのルームを管理するクラスです。
 //! \~english
+//! Class that manages fullmesh type room.
 //! \~
 @interface SKWMeshRoom : SKWRoom
 
-//! \~japanese 現在のルームから退室します
-//! \~english
+//! \~japanese ルームを退出し、ルーム内のすべてのユーザーとのコネクションをcloseします。
+//! \~english Close PeerConnection and emit leave and close event.
 //! \~
 - (void)close;
 
 //! \~japanese
 //! 送信しているメディアストリームを更新します。
-//! 受信のみモードから双方向に切り替えることも出来ます。
-//! \~english
+//! 受信のみモードから双方向に切り替えることもできます。
+//! \~english Replace the stream being sent on all MediaConnections with a new one.
 //! \~
 //!
 //! \code{.m}
@@ -36,8 +41,8 @@
 //! \endcode
 //!
 //! @param newStream
-//! \~japanese ルーム内のユーザに送るメディアストリーム
-//! \~english
+//! \~japanese 交換対象となる新しいMediaStream
+//! \~english The stream to replace the old stream with.
 //! \~
 - (void)replaceStream:(SKWMediaStream* __nullable)newStream;
 

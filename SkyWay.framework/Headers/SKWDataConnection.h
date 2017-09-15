@@ -4,6 +4,10 @@
 ////////////////////////////////////////////////////////////////////////
 #import "SKWConnection.h"
 
+/**
+ * \file SKWDataConnection.h
+ */
+
 @class SKWDataChannel;
 
 
