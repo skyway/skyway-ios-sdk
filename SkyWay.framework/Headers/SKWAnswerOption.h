@@ -4,6 +4,13 @@
 ////////////////////////////////////////////////////////////////////////
 #import <Foundation/Foundation.h>
 
+/**
+ * \file SKWAnswerOption.h
+ */
+
+//! \~japanese SKWMediaConnection answer オプション
+//! \~english SKWMediaConnection answer Option
+//! \~
 @interface SKWAnswerOption : NSObject < NSCopying >
 
 //! \~japanese 映像の最大バンド幅を kbps で指定します。

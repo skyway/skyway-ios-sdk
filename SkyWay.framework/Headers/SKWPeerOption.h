@@ -5,6 +5,10 @@
 #import <Foundation/Foundation.h>
 #import "SKWCommon.h"
 
+/**
+ * \file SKWPeerOption.h
+ */
+
 @class SKWPeerCredential;
 
 #ifndef DOXYGEN_SKIP_THIS
@@ -74,11 +78,11 @@ typedef NS_ENUM(NSUInteger, SKWDebugLevelEnum)
 @property (nonatomic) NSString* __nullable path SKYWAY_API_DEPRECATED;
 
 //! \~japanese  サーバとの SSL 接続を行うか指定します。デフォルトは YES となります。
-//! \~english true if you're using SSL.
+//! \~english Set to true if you're using SSL.
 //! \~
 @property (nonatomic) BOOL secure;
 
-//! \~japanese ICE/TURN サーバー設定を指定します
+//! \~japanese ICE/TURN サーバ設定を指定します
 //! \~english This contains any custom ICE/TURN server configuration.
 //! \~
 @property (nonatomic) NSArray* __nullable config;
@@ -93,7 +97,7 @@ typedef NS_ENUM(NSUInteger, SKWDebugLevelEnum)
 //! \~
 @property (nonatomic) NSString* __nullable domain;
 
-//! \~japanese SkyWay TURN サーバーを使用します (TURN サーバーの利用を申請する必要があります)
+//! \~japanese SkyWay TURN サーバを使用します (TURN サーバの利用を申請する必要があります)
 //! \~english Using SkyWay TURN server. (Need to request for a TURN server use to SkyWay)
 //! \~
 @property (nonatomic) BOOL turn;

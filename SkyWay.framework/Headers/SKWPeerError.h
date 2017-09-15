@@ -5,6 +5,10 @@
 #import <Foundation/Foundation.h>
 #import "SKWCommon.h"
 
+/**
+ * \file SKWPeerError.h
+ */
+
 #ifndef DOXYGEN_SKIP_THIS
 //! Error type
 typedef NS_ENUM(NSInteger, SKWPeerErrorEnum)

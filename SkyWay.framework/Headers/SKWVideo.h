@@ -14,6 +14,10 @@
 #endif
 #import "SKWCommon.h"
 
+/**
+ * \file SKWVideo.h
+ */
+
 @class SKWMediaStream;
 
 //! \~japanese 映像を表示するレンダラービューオブジェクトです。

@@ -4,6 +4,10 @@
 ////////////////////////////////////////////////////////////////////////
 #import <Foundation/Foundation.h>
 
+/**
+ * \file SKWRoomOption.h
+ */
+
 @class SKWMediaStream;
 
 //! \~japanese ルームモード

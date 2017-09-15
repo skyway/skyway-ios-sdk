@@ -6,6 +6,10 @@
 #import "SKWMediaConstraints.h"
 #import "SKWCommon.h"
 
+/**
+ * \file SKWMediaStream.h
+ */
+
 @class SKWVideo;
 
 //! \~japanese メディアストリーム

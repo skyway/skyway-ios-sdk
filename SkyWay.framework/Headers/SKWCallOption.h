@@ -4,12 +4,18 @@
 ////////////////////////////////////////////////////////////////////////
 #import <Foundation/Foundation.h>
 
+/**
+ * \file SKWCallOption.h
+ */
+
 //! \~japanese SKWPeer call オプション
 //! \~english SKWPeer call options
 //! \~
 @interface SKWCallOption : NSObject < NSCopying >
 
-//! \~japanese メタデータを指定します
+//! \~japanese
+//! メタデータを指定します
+//! コネクションに関連付けされるメタデータで、コネクションを開始したpeerに渡されます。
 //! \~english
 //! Any type of metadata associated with the connection,
 //! passed in by whoever initiated the connection.
@@ -17,12 +23,12 @@
 @property (nonatomic) NSString* __nullable metadata;
 
 //! \~japanese コネクション ID を指定します
-//! \~english
+//! \~english The connectionId of the peer you are calling.
 //! \~
 @property (nonatomic) NSString* __nullable connectionId;
 
-//! \~japanese ストリームのラベルを指定します
-//! \~english
+//! \~japanese 接続先の Peer ID を識別するのに利用するラベルを指定します。
+//! \~english Label to easily identify the connection on either peer.
 //! \~
 @property (nonatomic) NSString* __nullable label;
 

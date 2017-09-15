@@ -4,6 +4,10 @@
 ////////////////////////////////////////////////////////////////////////
 #import <Foundation/Foundation.h>
 
+/**
+ * \file SKWRoom.h
+ */
+
 @class SKWMediaStream;
 
 //! \~japanese ルームイベント
@@ -69,7 +73,7 @@ typedef void (^SKWRoomEventCallback)(NSObject* __nullable arg);
 #endif // !DOXYGEN_SKIP_THIS
 
 //! \~japanese 現在のルームに入室中のピアにデータを送信します。NSString* または NSData* を送信できます。
-//! \~english
+//! \~english Send data to all participants in the room with WebSocket. It emits broadcast event.
 //! \~
 //!
 //! \code{.m}
@@ -79,16 +83,16 @@ typedef void (^SKWRoomEventCallback)(NSObject* __nullable arg);
 //!
 //! @param data
 //! \~japanese 送信データ
-//! \~english
+//! \~english Send data
 //! \~
 //! @return
 //! \~japanese 呼び出し結果
-//! \~english
+//! \~english Result.
 //! \~
 - (BOOL)send:(NSObject* __nonnull)data;
 
 //! \~japanese SKWRoom のイベントコールバック block を設定します。
-//! \~english
+//! \~english Set blocks for SKWRoom events.
 //! \~
 //!
 //! \code{.m}
@@ -148,7 +152,7 @@ typedef void (^SKWRoomEventCallback)(NSObject* __nullable arg);
 - (void)on:(SKWRoomEventEnum)event callback:(SKWRoomEventCallback __nullable)callback;
 
 //! \~japanese SKWRoom の設定済みイベントコールバック block を解除します。
-//! \~english
+//! \~english Cancels the set event callback block of SKWRoom.
 //! \~
 //!
 //! \code{.m}
@@ -157,8 +161,8 @@ typedef void (^SKWRoomEventCallback)(NSObject* __nullable arg);
 //! \endcode
 - (void)offAll;
 
-//! \~japanese 現在のルームのログ情報を取得します。結果は SKW_ROOM_EVENT_LOG イベントで返されます。
-//! \~english
+//! \~japanese シグナリングサーバにルームのログ取得を要求します。結果は SKW_ROOM_EVENT_LOG イベントで返されます。
+//! \~english Start getting room's logs from signaling server. The result is returned in the SKW_ROOM_EVENT_LOG event.
 //! \~
 //!
 //! \code{.m}

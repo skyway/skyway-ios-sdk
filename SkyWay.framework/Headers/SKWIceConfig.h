@@ -4,6 +4,10 @@
 ////////////////////////////////////////////////////////////////////////
 #import <Foundation/Foundation.h>
 
+/**
+ * \file SKWIceConfig.h
+ */
+
 //! \~japanese SKWPeer 初期化時の STUN/TURN サーバ設定情報クラスです。
 //! \~english ICE server config
 //! \~

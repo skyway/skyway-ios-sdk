@@ -4,6 +4,10 @@
 ////////////////////////////////////////////////////////////////////////
 #import <Foundation/Foundation.h>
 
+/**
+ * \file SKWNavigator.h
+ */
+
 @class SKWMediaConstraints;
 @class SKWMediaStream;
 @class SKWPeer;

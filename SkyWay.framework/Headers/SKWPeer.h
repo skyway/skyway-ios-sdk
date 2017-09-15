@@ -4,6 +4,10 @@
 ////////////////////////////////////////////////////////////////////////
 #import "SKWHeaders.h"
 
+/**
+ * \file SKWPeer.h
+ */
+
 #ifndef DOXYGEN_SKIP_THIS
 /// True string value
 extern NSString* __nonnull const kSKWTrue;
@@ -36,7 +40,7 @@ extern NSString* __nonnull const kSKWPeerSerializationNone;
 //! \~
 typedef NS_ENUM(NSUInteger, SKWPeerEventEnum)
 {
-    //! \~japanese シグナリングサーバーとの接続が確立された時のイベントです
+    //! \~japanese シグナリングサーバとの接続が確立された時のイベントです
     //! \~english Emitted when a connection to the PeerServer is established.
     //! \~
     SKW_PEER_EVENT_OPEN,
@@ -89,6 +93,7 @@ typedef void (^SKWPeerEventCallback)(NSObject* __nullable arg);
 //! \~japanese
 //! ピアクラス
 //! \~english
+//! A peer class
 //! \~
 @interface SKWPeer : NSObject
 
@@ -417,7 +422,7 @@ typedef void (^SKWPeerEventCallback)(NSObject* __nullable arg);
 - (BOOL)destroy;
 
 //! \~japanese
-//! SkyWay シグナリングサーバーから接続可能な ピア ID の一覧を取得します。
+//! SkyWay シグナリングサーバから接続可能な ピア ID の一覧を取得します。
 //! \~english
 //! Listing peer ID.
 //! \~

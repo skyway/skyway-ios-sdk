@@ -4,6 +4,10 @@
 ////////////////////////////////////////////////////////////////////////
 #import "SKWConnection.h"
 
+/**
+ * \file SKWMediaConnection.h
+ */
+
 @class SKWMediaStream;
 @class SKWAnswerOption;
 
@@ -184,7 +188,7 @@ typedef void (^SKWMediaConnectionEventCallback)(NSObject* __nullable arg);
 
 //! \~japanese
 //! 送信しているメディアストリームを更新します。
-//! 受信のみモードから双方向に切り替えることも出来ます。
+//! 受信のみモードから双方向に切り替えることもできます。
 //! \~english
 //! \~
 //!

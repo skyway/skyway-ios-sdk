@@ -5,6 +5,10 @@
 #import <Foundation/Foundation.h>
 #import "SKWCommon.h"
 
+/**
+ * \file SKWConnection.h
+ */
+
 @class SKWPeer;
 
 //! \~japanese シリアライズ種別
