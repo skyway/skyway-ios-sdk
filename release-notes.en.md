@@ -5,7 +5,7 @@ SkyWay iOS SDK release notes
 
 ###　New features
 --------------------------
-**Version 1.0.1**
+**Version 1.0.2**
 
 * Fixed bug in an IPv6 environment.
 
