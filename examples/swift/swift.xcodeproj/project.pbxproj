@@ -14,6 +14,8 @@
 		6F0196E41FB932C0003D22D2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6F0196E31FB932C0003D22D2 /* Assets.xcassets */; };
 		6F0196E71FB932C0003D22D2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F0196E51FB932C0003D22D2 /* LaunchScreen.storyboard */; };
 		6F0196F21FB932C1003D22D2 /* swiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F0196F11FB932C1003D22D2 /* swiftUITests.swift */; };
+		6F0197001FB938E4003D22D2 /* MediaConnectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F0196FF1FB938E4003D22D2 /* MediaConnectionViewController.swift */; };
+		6F0197021FB938F1003D22D2 /* DataConnectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F0197011FB938F1003D22D2 /* DataConnectionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +40,8 @@
 		6F0196ED1FB932C1003D22D2 /* swiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = swiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F0196F11FB932C1003D22D2 /* swiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swiftUITests.swift; sourceTree = "<group>"; };
 		6F0196F31FB932C1003D22D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6F0196FF1FB938E4003D22D2 /* MediaConnectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaConnectionViewController.swift; sourceTree = "<group>"; };
+		6F0197011FB938F1003D22D2 /* DataConnectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataConnectionViewController.swift; sourceTree = "<group>"; };
 		9EC17C4DFD8FEE3436C554DB /* Pods-swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-swift/Pods-swift.debug.xcconfig"; sourceTree = "<group>"; };
 		BE036C6DF9BC721E388217A2 /* Pods-swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swift.release.xcconfig"; path = "Pods/Target Support Files/Pods-swift/Pods-swift.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -85,11 +89,9 @@
 			isa = PBXGroup;
 			children = (
 				6F0196DC1FB932C0003D22D2 /* AppDelegate.swift */,
-				6F0196DE1FB932C0003D22D2 /* ViewController.swift */,
-				6F0196E01FB932C0003D22D2 /* Main.storyboard */,
-				6F0196E31FB932C0003D22D2 /* Assets.xcassets */,
-				6F0196E51FB932C0003D22D2 /* LaunchScreen.storyboard */,
-				6F0196E81FB932C0003D22D2 /* Info.plist */,
+				6F0196FE1FB938A0003D22D2 /* view */,
+				6F0196FD1FB9389A003D22D2 /* viewcontroller */,
+				6F0196FC1FB9388E003D22D2 /* resources */,
 			);
 			path = swift;
 			sourceTree = "<group>";
@@ -101,6 +103,34 @@
 				6F0196F31FB932C1003D22D2 /* Info.plist */,
 			);
 			path = swiftUITests;
+			sourceTree = "<group>";
+		};
+		6F0196FC1FB9388E003D22D2 /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				6F0196E31FB932C0003D22D2 /* Assets.xcassets */,
+				6F0196E51FB932C0003D22D2 /* LaunchScreen.storyboard */,
+				6F0196E81FB932C0003D22D2 /* Info.plist */,
+			);
+			path = resources;
+			sourceTree = "<group>";
+		};
+		6F0196FD1FB9389A003D22D2 /* viewcontroller */ = {
+			isa = PBXGroup;
+			children = (
+				6F0196DE1FB932C0003D22D2 /* ViewController.swift */,
+				6F0196FF1FB938E4003D22D2 /* MediaConnectionViewController.swift */,
+				6F0197011FB938F1003D22D2 /* DataConnectionViewController.swift */,
+			);
+			path = viewcontroller;
+			sourceTree = "<group>";
+		};
+		6F0196FE1FB938A0003D22D2 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				6F0196E01FB932C0003D22D2 /* Main.storyboard */,
+			);
+			path = view;
 			sourceTree = "<group>";
 		};
 		8400501A52700D4988FF8132 /* Frameworks */ = {
@@ -282,6 +312,8 @@
 			files = (
 				6F0196DF1FB932C0003D22D2 /* ViewController.swift in Sources */,
 				6F0196DD1FB932C0003D22D2 /* AppDelegate.swift in Sources */,
+				6F0197021FB938F1003D22D2 /* DataConnectionViewController.swift in Sources */,
+				6F0197001FB938E4003D22D2 /* MediaConnectionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
