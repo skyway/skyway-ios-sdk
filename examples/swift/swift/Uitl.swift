@@ -43,7 +43,9 @@ extension UIAlertController {
             })
             alert.addAction(peerIdAction)
         }
-        
+        let noAction = UIAlertAction(title: "キャンセル", style: .cancel, handler: nil)
+        alert.addAction(noAction)
+
         let viewController = UIViewController.getFrontViewController()
         viewController.present(alert, animated: true, completion: nil)
 

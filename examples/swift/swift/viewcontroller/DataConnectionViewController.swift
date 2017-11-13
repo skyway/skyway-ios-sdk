@@ -125,6 +125,7 @@ extension DataConnectionViewController{
         
         //接続
         if let dataConnection = peer?.connect(withId: targetPeerId, options: options){
+            self.dataConnection = dataConnection
             self.setupDataConnectionCallbacks(dataConnection: dataConnection)
         }else{
             print("failed to connect data connection")
@@ -169,6 +170,10 @@ extension DataConnectionViewController{
         
         // MARK: DATACONNECTION_EVENT_OPEN
         dataConnection.on(SKWDataConnectionEventEnum.DATACONNECTION_EVENT_OPEN, callback: { (obj) -> Void in
+            if let dataConnection = obj as? SKWDataConnection{
+                self.targetPeerIdLabel.text = dataConnection.peer
+                self.targetPeerIdLabel.textColor = UIColor.darkGray
+            }
             self.changeConnectionStatusUI(connected: true)
         })
         
@@ -183,6 +188,7 @@ extension DataConnectionViewController{
         
         // MARK: DATACONNECTION_EVENT_CLOSE
         dataConnection.on(SKWDataConnectionEventEnum.DATACONNECTION_EVENT_CLOSE, callback: { (obj) -> Void in
+            print("close data connection")
             self.dataConnection = nil
             self.changeConnectionStatusUI(connected: false)
         })
