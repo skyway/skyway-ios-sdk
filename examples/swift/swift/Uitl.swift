@@ -2,8 +2,6 @@
 //  Uitl.swift
 //  swift_skyway
 //
-//  Created by 羽田 健太郎 on 2017/11/13.
-//  Copyright © 2017年 羽田 健太郎. All rights reserved.
 //
 
 import Foundation
