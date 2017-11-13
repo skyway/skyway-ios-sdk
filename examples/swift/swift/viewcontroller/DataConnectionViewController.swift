@@ -33,3 +33,15 @@ class DataConnectionViewController: UIViewController {
     */
 
 }
+
+// MARK: setup skyway
+
+extension DataConnectionViewController{
+    
+}
+
+// MARK: skyway callbacks
+
+extension DataConnectionViewController{
+    
+}
