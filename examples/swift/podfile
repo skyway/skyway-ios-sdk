@@ -5,7 +5,7 @@ def install_pods
   pod 'SkyWay'
 end
 
-target 'swift' do
+target 'swift_skyway' do
   install_pods
 end
 

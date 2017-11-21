@@ -158,8 +158,7 @@ extension MediaConnectionViewController{
         
         // MARK: MEDIACONNECTION_EVENT_CLOSE
         mediaConnection.on(SKWMediaConnectionEventEnum.MEDIACONNECTION_EVENT_CLOSE, callback: { (obj) -> Void in
-            if let msStream = obj as? SKWMediaStream{
-                self.remoteStream = msStream
+            if let _ = obj as? SKWMediaConnection{
                 DispatchQueue.main.async {
                     self.remoteStream?.removeVideoRenderer(self.remoteStreamView, track: 0)
                     self.remoteStream = nil
