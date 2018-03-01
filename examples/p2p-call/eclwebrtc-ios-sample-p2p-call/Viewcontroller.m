@@ -71,8 +71,7 @@ static NSString *const kDomain = @"yourDomain";
     [_peer on:SKW_PEER_EVENT_CALL callback:^(NSObject* obj) {
         if (YES == [obj isKindOfClass:[SKWMediaConnection class]]) {
             _mediaConnection = (SKWMediaConnection *)obj;
-            [self setMediaCallbacks];
-            [_mediaConnection answer:_localStream];
+            [self showIncomingCallAlert];
         }
     }];
     
@@ -283,6 +282,34 @@ static NSString *const kDomain = @"yourDomain";
     }
     
     [_localStream setCameraPosition:pos];
+}
+
+//
+// Show alert dialog on an incoming call
+//
+- (void)showIncomingCallAlert {
+    NSString *remotePeerId = [NSString stringWithFormat:@"from : %@", _mediaConnection.peer];
+    UIAlertController *alertController = [UIAlertController
+                                          alertControllerWithTitle:@"Incoming Call"
+                                          message:remotePeerId
+                                          preferredStyle:UIAlertControllerStyleAlert];
+
+    [alertController addAction:[UIAlertAction
+                                actionWithTitle:@"Answer"
+                                style:UIAlertActionStyleDefault
+                                handler:^(UIAlertAction *action) {
+                                    [self setMediaCallbacks];
+                                    [_mediaConnection answer:_localStream];
+                                }]];
+
+    [alertController addAction:[UIAlertAction
+                                actionWithTitle:@"Deny"
+                                style:UIAlertActionStyleDefault
+                                handler:^(UIAlertAction *action) {
+                                    // will be filled in next commit
+                                }]];
+
+    [self presentViewController:alertController animated:YES completion:nil];
 }
 
 @end
