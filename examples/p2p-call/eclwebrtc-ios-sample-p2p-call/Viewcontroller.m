@@ -17,6 +17,7 @@ static NSString *const kDomain = @"yourDomain";
     SKWMediaStream*		_localStream;
     SKWMediaStream*		_remoteStream;
     SKWMediaConnection*	_mediaConnection;
+    SKWDataConnection*  _signalingChannel;
     
     NSString*			_strOwnId;
     BOOL				_bConnected;
@@ -74,10 +75,20 @@ static NSString *const kDomain = @"yourDomain";
             [self showIncomingCallAlert];
         }
     }];
+
+    // CONNECT (Custom Signaling Channel for a call)
+    [_peer on:SKW_PEER_EVENT_CONNECTION callback:^(NSObject* obj) {
+        if (YES == [obj isKindOfClass:[SKWDataConnection class]]) {
+            _signalingChannel = (SKWDataConnection *)obj;
+        }
+    }];
     
     [_peer on:SKW_PEER_EVENT_CLOSE callback:^(NSObject* obj) {}];
     [_peer on:SKW_PEER_EVENT_DISCONNECTED callback:^(NSObject* obj) {}];
-    [_peer on:SKW_PEER_EVENT_ERROR callback:^(NSObject* obj) {}];
+    [_peer on:SKW_PEER_EVENT_ERROR callback:^(NSObject* obj) {
+        SKWPeerError* err = (SKWPeerError *)obj;
+        NSLog(@"%@", err);
+    }];
     
 }
 
@@ -145,7 +156,36 @@ static NSString *const kDomain = @"yourDomain";
 
      }];
     
-    [_mediaConnection on:SKW_MEDIACONNECTION_EVENT_ERROR callback:^(NSObject* obj) { }];
+    [_mediaConnection on:SKW_MEDIACONNECTION_EVENT_ERROR callback:^(NSObject* obj) {
+        SKWPeerError* err = (SKWPeerError *)obj;
+        NSLog(@"%@", err);
+    }];
+}
+
+//
+// Set callbacks for SKW_DATACONNECTION_EVENTs
+//
+- (void)setSignalingCallbacks {
+    if (nil == _signalingChannel) {
+        return;
+    }
+    
+    [_signalingChannel on:SKW_DATACONNECTION_EVENT_OPEN callback:^(NSObject* obj) { }];
+    [_signalingChannel on:SKW_DATACONNECTION_EVENT_CLOSE callback:^(NSObject* obj) { }];
+    [_signalingChannel on:SKW_DATACONNECTION_EVENT_ERROR callback:^(NSObject* obj) {
+        SKWPeerError* err = (SKWPeerError *)obj;
+        NSLog(@"%@", err);
+    }];
+    [_signalingChannel on:SKW_DATACONNECTION_EVENT_DATA callback:^(NSObject* obj) {
+        NSString *message = (NSString *)obj;
+        NSLog(@"[On/Data] %@", message);
+        
+        if ([message isEqualToString:@"reject"]) {
+            [_mediaConnection close];
+            _bConnected = NO;
+            [self updateActionButtonTitle];
+        }
+    }];
 }
 
 //
@@ -199,6 +239,10 @@ static NSString *const kDomain = @"yourDomain";
 - (void) didSelectPeer:(NSString *)peerId {
     _mediaConnection = [_peer callWithId:peerId stream:_localStream];
     [self setMediaCallbacks];
+    
+    // custom P2P signaling channel to reject call attempt
+    _signalingChannel = [_peer connectWithId:peerId];
+    [self setSignalingCallbacks];
 }
 
 //
@@ -306,7 +350,7 @@ static NSString *const kDomain = @"yourDomain";
                                 actionWithTitle:@"Deny"
                                 style:UIAlertActionStyleDefault
                                 handler:^(UIAlertAction *action) {
-                                    // will be filled in next commit
+                                    [_signalingChannel send:@"reject"];
                                 }]];
 
     [self presentViewController:alertController animated:YES completion:nil];
