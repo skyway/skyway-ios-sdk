@@ -2,6 +2,9 @@
 //  ViewController.m
 //  eclwebrtc-ios-sample-p2p-call
 //
+//  In this sample, a callee will be prompted by an alert-dialog to select
+//  either "answer" or "reject" an incoming call (unlike p2p-videochat sample,
+//  in which a callee will answer the call automatically).
 //
 
 #import "ViewController.h"
