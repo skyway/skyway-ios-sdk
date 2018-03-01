@@ -11,17 +11,24 @@
 //
 static NSString *const kAPIkey = @"yourAPIKEY";
 static NSString *const kDomain = @"yourDomain";
+typedef NS_ENUM(NSInteger, kCallState){
+    CALL_STATE_TERMINATED,
+    CALL_STATE_CALLING,
+    CALL_STATE_ESTABLISHED
+};
 
 @interface ViewController () {
-    SKWPeer*			_peer;
-    SKWMediaStream*		_localStream;
-    SKWMediaStream*		_remoteStream;
-    SKWMediaConnection*	_mediaConnection;
+    SKWPeer*            _peer;
+    SKWMediaStream*     _localStream;
+    SKWMediaStream*     _remoteStream;
+    SKWMediaConnection* _mediaConnection;
     SKWDataConnection*  _signalingChannel;
     
-    NSString*			_strOwnId;
-    BOOL				_bConnected;
+    NSString*           _strOwnId;
+    BOOL                _bConnected;
+    kCallState          _callState;
     
+    UIAlertController*  _alertController;
 }
 
 @property (weak, nonatomic) IBOutlet UILabel*   idLabel;
@@ -35,6 +42,7 @@ static NSString *const kDomain = @"yourDomain";
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    _callState = CALL_STATE_TERMINATED;
     
     //
     // Initialize Peer
@@ -72,6 +80,7 @@ static NSString *const kDomain = @"yourDomain";
     [_peer on:SKW_PEER_EVENT_CALL callback:^(NSObject* obj) {
         if (YES == [obj isKindOfClass:[SKWMediaConnection class]]) {
             _mediaConnection = (SKWMediaConnection *)obj;
+            _callState = CALL_STATE_CALLING;
             [self showIncomingCallAlert];
         }
     }];
@@ -80,6 +89,7 @@ static NSString *const kDomain = @"yourDomain";
     [_peer on:SKW_PEER_EVENT_CONNECTION callback:^(NSObject* obj) {
         if (YES == [obj isKindOfClass:[SKWDataConnection class]]) {
             _signalingChannel = (SKWDataConnection *)obj;
+            [self setSignalingCallbacks];
         }
     }];
     
@@ -125,12 +135,12 @@ static NSString *const kDomain = @"yourDomain";
 
     [_mediaConnection on:SKW_MEDIACONNECTION_EVENT_STREAM callback:^(NSObject* obj) {
          if (YES == [obj isKindOfClass:[SKWMediaStream class]]) {
-             if (YES == _bConnected) {
+             if (CALL_STATE_ESTABLISHED == _callState) {
                  return;
              }
              
              // Change connection state
-             _bConnected = YES;
+             _callState = CALL_STATE_ESTABLISHED;
              [self updateActionButtonTitle];
              
              // Get a remote MediaStream & show it
@@ -143,15 +153,15 @@ static NSString *const kDomain = @"yourDomain";
      }];
     
     [_mediaConnection on:SKW_MEDIACONNECTION_EVENT_CLOSE callback:^(NSObject* obj) {
-        if (NO == _bConnected) {
+        if (CALL_STATE_ESTABLISHED != _callState) {
             return;
         }
 
         [self closeRemoteStream];
         [self unsetMediaCallbacks];
         _mediaConnection = nil;
-        
-        _bConnected = NO;
+        [_signalingChannel close];
+        _callState = CALL_STATE_TERMINATED;
         [self updateActionButtonTitle];
 
      }];
@@ -182,8 +192,16 @@ static NSString *const kDomain = @"yourDomain";
         
         if ([message isEqualToString:@"reject"]) {
             [_mediaConnection close];
-            _bConnected = NO;
+            [_signalingChannel close];
+            _callState = CALL_STATE_TERMINATED;
             [self updateActionButtonTitle];
+        }
+        else if ([message isEqualToString:@"cancel"]) {
+            [_mediaConnection close];
+            [_signalingChannel close];
+            _callState = CALL_STATE_TERMINATED;
+            [self updateActionButtonTitle];
+            [self dismissIncomingCallAlert];
         }
     }];
 }
@@ -239,6 +257,7 @@ static NSString *const kDomain = @"yourDomain";
 - (void) didSelectPeer:(NSString *)peerId {
     _mediaConnection = [_peer callWithId:peerId stream:_localStream];
     [self setMediaCallbacks];
+    _callState = CALL_STATE_CALLING;
     
     // custom P2P signaling channel to reject call attempt
     _signalingChannel = [_peer connectWithId:peerId];
@@ -250,7 +269,8 @@ static NSString *const kDomain = @"yourDomain";
 //
 - (IBAction)onActionButtonClicked:(id)sender {
     
-    if(nil == _mediaConnection) {
+//    if(nil == _mediaConnection) {
+    if(CALL_STATE_TERMINATED == _callState) {
         
         //
         // Select remote peer & make a call
@@ -284,7 +304,19 @@ static NSString *const kDomain = @"yourDomain";
         
         }];
     }
-         
+    else if(CALL_STATE_CALLING == _callState){
+        
+        //
+        // Cancel a call
+        //
+        
+        if(nil != _signalingChannel){
+            [_signalingChannel send:@"cancel"];
+        }
+        _callState = CALL_STATE_TERMINATED;
+        [self updateActionButtonTitle];
+        
+    }
     else {
         
         //
@@ -293,6 +325,10 @@ static NSString *const kDomain = @"yourDomain";
         
         [self closeRemoteStream];
         [_mediaConnection close];
+        [_signalingChannel close];
+        _callState = CALL_STATE_TERMINATED;
+        [self updateActionButtonTitle];
+        
     }
 }
 
@@ -301,7 +337,16 @@ static NSString *const kDomain = @"yourDomain";
 //
 - (void)updateActionButtonTitle {
     dispatch_async(dispatch_get_main_queue(), ^{
-        NSString* title = (_bConnected) ? @"Hang up" : @"Make Call";
+        NSString* title;
+        if(CALL_STATE_TERMINATED == _callState){
+            title = @"Make Call";
+        }
+        else if(CALL_STATE_CALLING == _callState){
+            title = @"Cancel";
+        }
+        else {
+            title = @"Hang up";
+        }
         [_actionButton setTitle:title forState:UIControlStateNormal];
     });
 }
@@ -333,12 +378,12 @@ static NSString *const kDomain = @"yourDomain";
 //
 - (void)showIncomingCallAlert {
     NSString *remotePeerId = [NSString stringWithFormat:@"from : %@", _mediaConnection.peer];
-    UIAlertController *alertController = [UIAlertController
-                                          alertControllerWithTitle:@"Incoming Call"
-                                          message:remotePeerId
-                                          preferredStyle:UIAlertControllerStyleAlert];
+    _alertController = [UIAlertController
+                       alertControllerWithTitle:@"Incoming Call"
+                       message:remotePeerId
+                       preferredStyle:UIAlertControllerStyleAlert];
 
-    [alertController addAction:[UIAlertAction
+    [_alertController addAction:[UIAlertAction
                                 actionWithTitle:@"Answer"
                                 style:UIAlertActionStyleDefault
                                 handler:^(UIAlertAction *action) {
@@ -346,14 +391,22 @@ static NSString *const kDomain = @"yourDomain";
                                     [_mediaConnection answer:_localStream];
                                 }]];
 
-    [alertController addAction:[UIAlertAction
-                                actionWithTitle:@"Deny"
+    [_alertController addAction:[UIAlertAction
+                                actionWithTitle:@"Reject"
                                 style:UIAlertActionStyleDefault
                                 handler:^(UIAlertAction *action) {
                                     [_signalingChannel send:@"reject"];
+                                    _callState = CALL_STATE_TERMINATED;
                                 }]];
 
-    [self presentViewController:alertController animated:YES completion:nil];
+    [self presentViewController:_alertController animated:YES completion:nil];
+}
+
+//
+// Dismiss alert dialog for an incoming call
+//
+- (void)dismissIncomingCallAlert {
+    [_alertController dismissViewControllerAnimated:YES completion:nil];
 }
 
 @end
