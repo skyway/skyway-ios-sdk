@@ -14,7 +14,7 @@
 //
 static NSString *const kAPIkey = @"yourAPIKEY";
 static NSString *const kDomain = @"yourDomain";
-typedef NS_ENUM(NSInteger, kCallState){
+typedef NS_ENUM(NSInteger, CallState){
     CALL_STATE_TERMINATED,
     CALL_STATE_CALLING,
     CALL_STATE_ESTABLISHED
@@ -29,7 +29,7 @@ typedef NS_ENUM(NSInteger, kCallState){
     
     NSString*           _strOwnId;
     BOOL                _bConnected;
-    kCallState          _callState;
+    CallState          _callState;
     
     UIAlertController*  _alertController;
 }
