@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -71,7 +71,6 @@
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="qRP-YW-3G4" secondAttribute="bottom" constant="20" id="3Fz-od-TvL"/>
                             <constraint firstItem="qRP-YW-3G4" firstAttribute="top" secondItem="xCc-ga-4p3" secondAttribute="bottom" constant="10" id="3MO-Ld-Wc3"/>
                             <constraint firstItem="cdx-R7-g8H" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="4NX-U3-Ly2"/>
-                            <constraint firstItem="Hl7-6n-gw3" firstAttribute="bottom" secondItem="qRP-YW-3G4" secondAttribute="bottom" id="75A-Gf-lGU"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Hl7-6n-gw3" secondAttribute="bottom" constant="10" id="CMR-YX-ego"/>
                             <constraint firstAttribute="trailingMargin" secondItem="xCc-ga-4p3" secondAttribute="trailing" constant="10" id="E2a-Wg-yD9"/>
                             <constraint firstItem="QTD-eT-bWR" firstAttribute="width" secondItem="Mgp-nf-5aK" secondAttribute="width" multiplier="0.6" id="OrK-GG-pxs"/>
