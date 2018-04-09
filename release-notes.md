@@ -2,6 +2,13 @@
 
 [English](./release-notes.en.md)
 
+## [Version 1.0.4](https://github.com/skyway/skyway-ios-sdk/releases/tag/v1.0.4)
+
+### Fixed
+
+- disconnectメソッド後にdestroyメソッドを呼ぶとクラッシュする不具合を解消しました。
+- switchCameraメソッドが動作しない不具合を解消しました。
+
 ## [Version 1.0.3](https://github.com/skyway/skyway-ios-sdk/releases/tag/v1.0.3)
 
 ### Added
