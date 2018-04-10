@@ -2,6 +2,13 @@
 
 [日本語](./release-notes.md)
 
+## [Version 1.0.4](https://github.com/skyway/skyway-ios-sdk/releases/tag/v1.0.4)
+
+### Fixed
+
+- Fixed bug that causes crash of the app when call destroy after calling disconnect.
+- Fixed bug in switchCamera method.
+
 ## [Version 1.0.3](https://github.com/skyway/skyway-ios-sdk/releases/tag/v1.0.3)
 
 ### Added
@@ -27,7 +34,7 @@
 ## [Version 1.0.1](https://github.com/skyway/skyway-ios-sdk/releases/tag/v1.0.1)
 
 ### Fixed
- 
+
 - Fixed bug that metadata on Media/DataConnection class was not set.
 
 ## [Version 1.0.0](https://github.com/skyway/skyway-ios-sdk/releases/tag/v1.0.0)
