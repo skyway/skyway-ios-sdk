@@ -16,6 +16,7 @@ static NSString *const kDomain = @"yourDomain";
     SKWPeer*			_peer;
     SKWMediaStream*		_localStream;
     SKWMediaStream*		_remoteStream;
+    SKWMediaStream*        _newStream;
     SKWMediaConnection*	_mediaConnection;
     
     NSString*			_strOwnId;
@@ -115,22 +116,37 @@ static NSString *const kDomain = @"yourDomain";
 
     [_mediaConnection on:SKW_MEDIACONNECTION_EVENT_STREAM callback:^(NSObject* obj) {
          if (YES == [obj isKindOfClass:[SKWMediaStream class]]) {
-             if (YES == _bConnected) {
-                 return;
+             
+             if (_remoteStream == nil){
+                 // Get a remote MediaStream & show it
+                 _remoteStream = (SKWMediaStream *)obj;
+                 
+                 dispatch_async(dispatch_get_main_queue(), ^{
+                     [_remoteStream addVideoRenderer:_remoteView track:0];
+                     
+                     // Change connection state
+                     [self updateActionButtonTitle];
+                 });
+                _bConnected = YES;
+             }else{
+                 // when partner use replaceStream, SKW_MEDIACONNECTION_EVENT_STREAM will occur before SKW_MEDIACONNECTION_EVENT_REMOVE_STREAM.
+                 _newStream = (SKWMediaStream *)obj;
              }
-             
-             // Change connection state
-             _bConnected = YES;
-             [self updateActionButtonTitle];
-             
-             // Get a remote MediaStream & show it
-             _remoteStream = (SKWMediaStream *)obj;
-             dispatch_async(dispatch_get_main_queue(), ^{
-                 [_remoteStream addVideoRenderer:_remoteView track:0];
-             });
-             
          }
      }];
+    
+    [_mediaConnection on:SKW_MEDIACONNECTION_EVENT_REMOVE_STREAM callback:^(NSObject* obj) {
+        if(YES == [obj isKindOfClass:[SKWMediaStream class]]) {
+        [_remoteStream removeVideoRenderer:_remoteView track:0];
+        _remoteStream = nil;
+            if (nil != _newStream)
+            {
+                _remoteStream = _newStream;
+                [_remoteStream addVideoRenderer:_remoteView track:0];
+                _newStream = nil;
+            }
+        }
+    }];
     
     [_mediaConnection on:SKW_MEDIACONNECTION_EVENT_CLOSE callback:^(NSObject* obj) {
         if (NO == _bConnected) {
