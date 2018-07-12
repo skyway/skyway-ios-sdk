@@ -10,7 +10,7 @@ SkyWay iOS SDK is added as a dependency using CocoaPods. Setup the workspace usi
 pod install
 ```
 
-###2.Rewrite APIKEY, DOMAIN
+### 2.Rewrite APIKEY, DOMAIN
 
 ```
 //Viewcontroller.m
