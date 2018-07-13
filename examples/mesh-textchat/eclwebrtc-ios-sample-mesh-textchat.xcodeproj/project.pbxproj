@@ -14,7 +14,6 @@
 		71F5AB301EEE83F200038449 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71F5AB2F1EEE83F200038449 /* Assets.xcassets */; };
 		71F5AB331EEE83F200038449 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71F5AB311EEE83F200038449 /* LaunchScreen.storyboard */; };
 		71F5AB3C1EEE88EF00038449 /* TextChatTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 71F5AB3B1EEE88EF00038449 /* TextChatTableViewController.m */; };
-		71F5AB3F1EEE907D00038449 /* SkyWay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71F5AB3D1EEE907600038449 /* SkyWay.framework */; };
 		C4AC7BDE72F69973C7A882F0 /* Pods_eclwebrtc_ios_sample_mesh_textchat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C55BED6229CC8AEF80290948 /* Pods_eclwebrtc_ios_sample_mesh_textchat.framework */; };
 /* End PBXBuildFile section */
 
@@ -46,7 +45,6 @@
 		71F5AB341EEE83F200038449 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		71F5AB3A1EEE88EF00038449 /* TextChatTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextChatTableViewController.h; sourceTree = "<group>"; };
 		71F5AB3B1EEE88EF00038449 /* TextChatTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextChatTableViewController.m; sourceTree = "<group>"; };
-		71F5AB3D1EEE907600038449 /* SkyWay.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SkyWay.framework; sourceTree = "<group>"; };
 		C55BED6229CC8AEF80290948 /* Pods_eclwebrtc_ios_sample_mesh_textchat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_eclwebrtc_ios_sample_mesh_textchat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -55,7 +53,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				71F5AB3F1EEE907D00038449 /* SkyWay.framework in Frameworks */,
 				C4AC7BDE72F69973C7A882F0 /* Pods_eclwebrtc_ios_sample_mesh_textchat.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -66,7 +63,6 @@
 		71F5AB171EEE83F200038449 = {
 			isa = PBXGroup;
 			children = (
-				71F5AB3D1EEE907600038449 /* SkyWay.framework */,
 				71F5AB221EEE83F200038449 /* eclwebrtc-ios-sample-mesh-textchat */,
 				71F5AB211EEE83F200038449 /* Products */,
 				BE53A00E130E5B3839CE736F /* Pods */,
