@@ -13,11 +13,11 @@ pod install
 ### 2.Open xcworkspace file
 Make sure to always open the Xcode workspace instead of the project file when building your project:
 ```
-open example_app.xcworkspace
+open example_app.xcworkspace
 ```
 
 
-### 3.Rewrite APIKEY, DOMAIN
+### 3.Rewrite APIKEY, DOMAIN
 please get APIKey and Domain from https://webrtc.ecl.ntt.com/
 
 ```
