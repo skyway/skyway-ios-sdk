@@ -51,3 +51,29 @@ SkyWayは、WebRTCを利用したピア·ツー·ピアのデータ、ビデオ�
 
 ### 対応OS
 iOS 8+
+
+## インストール
+
+### CocoaPods
+
+[CocoaPods](https://cocoapods.org)Cocoaの依存管理マネージャーです。 次のコマンドでインストールします。
+
+```bash
+$ gem install cocoapods
+```
+
+CocoaPodsを使ってSkyWayをXcodeプロジェクトに統合するには、`Podfile`で指定します。
+```ruby
+platform :ios, '8.0'
+use_frameworks!
+
+target '<Your Target Name>' do
+    pod 'SkyWay'
+end
+```
+
+次にこのコマンドを実行します。
+
+```bash
+$ pod install
+```
