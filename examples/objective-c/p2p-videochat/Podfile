@@ -1,0 +1,10 @@
+platform :ios,'8.0'
+use_frameworks!
+
+def install_pods
+  pod 'SkyWay'
+end
+
+target 'eclwebrtc-ios-sample-p2p-videochat' do
+  install_pods
+end

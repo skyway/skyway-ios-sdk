@@ -1,0 +1,420 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		716A09841EF0EDE80026D801 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 716A09831EF0EDE80026D801 /* main.m */; };
+		716A09871EF0EDE90026D801 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 716A09861EF0EDE90026D801 /* AppDelegate.m */; };
+		716A098A1EF0EDE90026D801 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 716A09891EF0EDE90026D801 /* ViewController.m */; };
+		716A098D1EF0EDE90026D801 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 716A098B1EF0EDE90026D801 /* Main.storyboard */; };
+		716A098F1EF0EDE90026D801 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 716A098E1EF0EDE90026D801 /* Assets.xcassets */; };
+		716A09921EF0EDE90026D801 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 716A09901EF0EDE90026D801 /* LaunchScreen.storyboard */; };
+		716A09A01EF0EFB30026D801 /* TextChatTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 716A099F1EF0EFB30026D801 /* TextChatTableViewController.m */; };
+		C7E946E9378FE8C1DD75D09C /* Pods_eclwebrtc_ios_sample_sfu_textchat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C27A8E68A91AC9392A03D221 /* Pods_eclwebrtc_ios_sample_sfu_textchat.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		716A099D1EF0EE5C0026D801 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		246361808171EC9F3D877011 /* Pods-eclwebrtc-ios-sample-sfu-textchat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eclwebrtc-ios-sample-sfu-textchat.release.xcconfig"; path = "Pods/Target Support Files/Pods-eclwebrtc-ios-sample-sfu-textchat/Pods-eclwebrtc-ios-sample-sfu-textchat.release.xcconfig"; sourceTree = "<group>"; };
+		716A097F1EF0EDE80026D801 /* eclwebrtc-ios-sample-sfu-textchat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "eclwebrtc-ios-sample-sfu-textchat.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		716A09831EF0EDE80026D801 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		716A09851EF0EDE80026D801 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		716A09861EF0EDE90026D801 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		716A09881EF0EDE90026D801 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		716A09891EF0EDE90026D801 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		716A098C1EF0EDE90026D801 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		716A098E1EF0EDE90026D801 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		716A09911EF0EDE90026D801 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		716A09931EF0EDE90026D801 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		716A099E1EF0EFB30026D801 /* TextChatTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextChatTableViewController.h; sourceTree = "<group>"; };
+		716A099F1EF0EFB30026D801 /* TextChatTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextChatTableViewController.m; sourceTree = "<group>"; };
+		AF922E2FD768BE61CD6DB50F /* Pods-eclwebrtc-ios-sample-sfu-textchat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eclwebrtc-ios-sample-sfu-textchat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-eclwebrtc-ios-sample-sfu-textchat/Pods-eclwebrtc-ios-sample-sfu-textchat.debug.xcconfig"; sourceTree = "<group>"; };
+		C27A8E68A91AC9392A03D221 /* Pods_eclwebrtc_ios_sample_sfu_textchat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_eclwebrtc_ios_sample_sfu_textchat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		716A097C1EF0EDE80026D801 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C7E946E9378FE8C1DD75D09C /* Pods_eclwebrtc_ios_sample_sfu_textchat.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6D2C86EDC1CCCE8BB9A3955A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C27A8E68A91AC9392A03D221 /* Pods_eclwebrtc_ios_sample_sfu_textchat.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		716A09761EF0EDE80026D801 = {
+			isa = PBXGroup;
+			children = (
+				716A09811EF0EDE80026D801 /* eclwebrtc-ios-sample-sfu-textchat */,
+				716A09801EF0EDE80026D801 /* Products */,
+				C14D2AA5211A8B3FC5AEEA18 /* Pods */,
+				6D2C86EDC1CCCE8BB9A3955A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		716A09801EF0EDE80026D801 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				716A097F1EF0EDE80026D801 /* eclwebrtc-ios-sample-sfu-textchat.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		716A09811EF0EDE80026D801 /* eclwebrtc-ios-sample-sfu-textchat */ = {
+			isa = PBXGroup;
+			children = (
+				716A09851EF0EDE80026D801 /* AppDelegate.h */,
+				716A09861EF0EDE90026D801 /* AppDelegate.m */,
+				716A09881EF0EDE90026D801 /* ViewController.h */,
+				716A09891EF0EDE90026D801 /* ViewController.m */,
+				716A099E1EF0EFB30026D801 /* TextChatTableViewController.h */,
+				716A099F1EF0EFB30026D801 /* TextChatTableViewController.m */,
+				716A098B1EF0EDE90026D801 /* Main.storyboard */,
+				716A098E1EF0EDE90026D801 /* Assets.xcassets */,
+				716A09901EF0EDE90026D801 /* LaunchScreen.storyboard */,
+				716A09931EF0EDE90026D801 /* Info.plist */,
+				716A09821EF0EDE80026D801 /* Supporting Files */,
+			);
+			path = "eclwebrtc-ios-sample-sfu-textchat";
+			sourceTree = "<group>";
+		};
+		716A09821EF0EDE80026D801 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				716A09831EF0EDE80026D801 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C14D2AA5211A8B3FC5AEEA18 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AF922E2FD768BE61CD6DB50F /* Pods-eclwebrtc-ios-sample-sfu-textchat.debug.xcconfig */,
+				246361808171EC9F3D877011 /* Pods-eclwebrtc-ios-sample-sfu-textchat.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		716A097E1EF0EDE80026D801 /* eclwebrtc-ios-sample-sfu-textchat */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 716A09961EF0EDE90026D801 /* Build configuration list for PBXNativeTarget "eclwebrtc-ios-sample-sfu-textchat" */;
+			buildPhases = (
+				31B7F29C8BDE7A033AB51C91 /* [CP] Check Pods Manifest.lock */,
+				716A097B1EF0EDE80026D801 /* Sources */,
+				716A097C1EF0EDE80026D801 /* Frameworks */,
+				716A097D1EF0EDE80026D801 /* Resources */,
+				716A099D1EF0EE5C0026D801 /* Embed Frameworks */,
+				A3D6DD12CE78568E1561F7E5 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "eclwebrtc-ios-sample-sfu-textchat";
+			productName = "eclwebrtc-ios-sample-sfu-textchat";
+			productReference = 716A097F1EF0EDE80026D801 /* eclwebrtc-ios-sample-sfu-textchat.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		716A09771EF0EDE80026D801 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "NTT Communications";
+				TargetAttributes = {
+					716A097E1EF0EDE80026D801 = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 716A097A1EF0EDE80026D801 /* Build configuration list for PBXProject "eclwebrtc-ios-sample-sfu-textchat" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 716A09761EF0EDE80026D801;
+			productRefGroup = 716A09801EF0EDE80026D801 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				716A097E1EF0EDE80026D801 /* eclwebrtc-ios-sample-sfu-textchat */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		716A097D1EF0EDE80026D801 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				716A09921EF0EDE90026D801 /* LaunchScreen.storyboard in Resources */,
+				716A098F1EF0EDE90026D801 /* Assets.xcassets in Resources */,
+				716A098D1EF0EDE90026D801 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		31B7F29C8BDE7A033AB51C91 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-eclwebrtc-ios-sample-sfu-textchat-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A3D6DD12CE78568E1561F7E5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-eclwebrtc-ios-sample-sfu-textchat/Pods-eclwebrtc-ios-sample-sfu-textchat-frameworks.sh",
+				"${PODS_ROOT}/SkyWay/SkyWay.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SkyWay.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-eclwebrtc-ios-sample-sfu-textchat/Pods-eclwebrtc-ios-sample-sfu-textchat-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		716A097B1EF0EDE80026D801 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				716A09A01EF0EFB30026D801 /* TextChatTableViewController.m in Sources */,
+				716A098A1EF0EDE90026D801 /* ViewController.m in Sources */,
+				716A09871EF0EDE90026D801 /* AppDelegate.m in Sources */,
+				716A09841EF0EDE80026D801 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		716A098B1EF0EDE90026D801 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				716A098C1EF0EDE90026D801 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		716A09901EF0EDE90026D801 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				716A09911EF0EDE90026D801 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		716A09941EF0EDE90026D801 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		716A09951EF0EDE90026D801 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		716A09971EF0EDE90026D801 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AF922E2FD768BE61CD6DB50F /* Pods-eclwebrtc-ios-sample-sfu-textchat.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = "eclwebrtc-ios-sample-sfu-textchat/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ntt.ecl-webrtc-ios-sample-mesh-textchat";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		716A09981EF0EDE90026D801 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 246361808171EC9F3D877011 /* Pods-eclwebrtc-ios-sample-sfu-textchat.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = "eclwebrtc-ios-sample-sfu-textchat/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ntt.ecl-webrtc-ios-sample-mesh-textchat";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		716A097A1EF0EDE80026D801 /* Build configuration list for PBXProject "eclwebrtc-ios-sample-sfu-textchat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				716A09941EF0EDE90026D801 /* Debug */,
+				716A09951EF0EDE90026D801 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		716A09961EF0EDE90026D801 /* Build configuration list for PBXNativeTarget "eclwebrtc-ios-sample-sfu-textchat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				716A09971EF0EDE90026D801 /* Debug */,
+				716A09981EF0EDE90026D801 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 716A09771EF0EDE80026D801 /* Project object */;
+}
