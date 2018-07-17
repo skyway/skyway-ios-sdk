@@ -13,9 +13,8 @@
 		716A098D1EF0EDE90026D801 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 716A098B1EF0EDE90026D801 /* Main.storyboard */; };
 		716A098F1EF0EDE90026D801 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 716A098E1EF0EDE90026D801 /* Assets.xcassets */; };
 		716A09921EF0EDE90026D801 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 716A09901EF0EDE90026D801 /* LaunchScreen.storyboard */; };
-		716A099B1EF0EE5C0026D801 /* SkyWay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 716A09991EF0EE550026D801 /* SkyWay.framework */; };
-		716A099C1EF0EE5C0026D801 /* SkyWay.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 716A09991EF0EE550026D801 /* SkyWay.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		716A09A01EF0EFB30026D801 /* TextChatTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 716A099F1EF0EFB30026D801 /* TextChatTableViewController.m */; };
+		C7E946E9378FE8C1DD75D09C /* Pods_eclwebrtc_ios_sample_sfu_textchat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C27A8E68A91AC9392A03D221 /* Pods_eclwebrtc_ios_sample_sfu_textchat.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,7 +24,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				716A099C1EF0EE5C0026D801 /* SkyWay.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -33,6 +31,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		246361808171EC9F3D877011 /* Pods-eclwebrtc-ios-sample-sfu-textchat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eclwebrtc-ios-sample-sfu-textchat.release.xcconfig"; path = "Pods/Target Support Files/Pods-eclwebrtc-ios-sample-sfu-textchat/Pods-eclwebrtc-ios-sample-sfu-textchat.release.xcconfig"; sourceTree = "<group>"; };
 		716A097F1EF0EDE80026D801 /* eclwebrtc-ios-sample-sfu-textchat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "eclwebrtc-ios-sample-sfu-textchat.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		716A09831EF0EDE80026D801 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		716A09851EF0EDE80026D801 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -43,9 +42,10 @@
 		716A098E1EF0EDE90026D801 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		716A09911EF0EDE90026D801 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		716A09931EF0EDE90026D801 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		716A09991EF0EE550026D801 /* SkyWay.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SkyWay.framework; sourceTree = "<group>"; };
 		716A099E1EF0EFB30026D801 /* TextChatTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextChatTableViewController.h; sourceTree = "<group>"; };
 		716A099F1EF0EFB30026D801 /* TextChatTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextChatTableViewController.m; sourceTree = "<group>"; };
+		AF922E2FD768BE61CD6DB50F /* Pods-eclwebrtc-ios-sample-sfu-textchat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eclwebrtc-ios-sample-sfu-textchat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-eclwebrtc-ios-sample-sfu-textchat/Pods-eclwebrtc-ios-sample-sfu-textchat.debug.xcconfig"; sourceTree = "<group>"; };
+		C27A8E68A91AC9392A03D221 /* Pods_eclwebrtc_ios_sample_sfu_textchat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_eclwebrtc_ios_sample_sfu_textchat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,19 +53,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				716A099B1EF0EE5C0026D801 /* SkyWay.framework in Frameworks */,
+				C7E946E9378FE8C1DD75D09C /* Pods_eclwebrtc_ios_sample_sfu_textchat.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6D2C86EDC1CCCE8BB9A3955A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C27A8E68A91AC9392A03D221 /* Pods_eclwebrtc_ios_sample_sfu_textchat.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		716A09761EF0EDE80026D801 = {
 			isa = PBXGroup;
 			children = (
-				716A09991EF0EE550026D801 /* SkyWay.framework */,
 				716A09811EF0EDE80026D801 /* eclwebrtc-ios-sample-sfu-textchat */,
 				716A09801EF0EDE80026D801 /* Products */,
+				C14D2AA5211A8B3FC5AEEA18 /* Pods */,
+				6D2C86EDC1CCCE8BB9A3955A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,6 +112,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		C14D2AA5211A8B3FC5AEEA18 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AF922E2FD768BE61CD6DB50F /* Pods-eclwebrtc-ios-sample-sfu-textchat.debug.xcconfig */,
+				246361808171EC9F3D877011 /* Pods-eclwebrtc-ios-sample-sfu-textchat.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -110,10 +128,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 716A09961EF0EDE90026D801 /* Build configuration list for PBXNativeTarget "eclwebrtc-ios-sample-sfu-textchat" */;
 			buildPhases = (
+				31B7F29C8BDE7A033AB51C91 /* [CP] Check Pods Manifest.lock */,
 				716A097B1EF0EDE80026D801 /* Sources */,
 				716A097C1EF0EDE80026D801 /* Frameworks */,
 				716A097D1EF0EDE80026D801 /* Resources */,
 				716A099D1EF0EE5C0026D801 /* Embed Frameworks */,
+				A3D6DD12CE78568E1561F7E5 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -169,6 +189,45 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		31B7F29C8BDE7A033AB51C91 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-eclwebrtc-ios-sample-sfu-textchat-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A3D6DD12CE78568E1561F7E5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-eclwebrtc-ios-sample-sfu-textchat/Pods-eclwebrtc-ios-sample-sfu-textchat-frameworks.sh",
+				"${PODS_ROOT}/SkyWay/SkyWay.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SkyWay.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-eclwebrtc-ios-sample-sfu-textchat/Pods-eclwebrtc-ios-sample-sfu-textchat-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		716A097B1EF0EDE80026D801 /* Sources */ = {
@@ -298,6 +357,7 @@
 		};
 		716A09971EF0EDE90026D801 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AF922E2FD768BE61CD6DB50F /* Pods-eclwebrtc-ios-sample-sfu-textchat.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = "";
@@ -316,6 +376,7 @@
 		};
 		716A09981EF0EDE90026D801 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 246361808171EC9F3D877011 /* Pods-eclwebrtc-ios-sample-sfu-textchat.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = "";
