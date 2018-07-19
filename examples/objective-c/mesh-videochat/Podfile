@@ -5,6 +5,6 @@ def install_pods
   pod 'SkyWay'
 end
 
-target 'eclwebrtc-ios-sample-mesh-textchat' do
+target 'eclwebrtc-ios-sample-mesh-videochat' do
   install_pods
 end
