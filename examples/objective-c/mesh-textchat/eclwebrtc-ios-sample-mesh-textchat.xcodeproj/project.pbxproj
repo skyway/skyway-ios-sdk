@@ -14,8 +14,6 @@
 		71F5AB301EEE83F200038449 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71F5AB2F1EEE83F200038449 /* Assets.xcassets */; };
 		71F5AB331EEE83F200038449 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71F5AB311EEE83F200038449 /* LaunchScreen.storyboard */; };
 		71F5AB3C1EEE88EF00038449 /* TextChatTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 71F5AB3B1EEE88EF00038449 /* TextChatTableViewController.m */; };
-		71F5AB3F1EEE907D00038449 /* SkyWay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71F5AB3D1EEE907600038449 /* SkyWay.framework */; };
-		71F5AB401EEE907D00038449 /* SkyWay.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 71F5AB3D1EEE907600038449 /* SkyWay.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,7 +23,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				71F5AB401EEE907D00038449 /* SkyWay.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -45,7 +42,6 @@
 		71F5AB341EEE83F200038449 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		71F5AB3A1EEE88EF00038449 /* TextChatTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextChatTableViewController.h; sourceTree = "<group>"; };
 		71F5AB3B1EEE88EF00038449 /* TextChatTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextChatTableViewController.m; sourceTree = "<group>"; };
-		71F5AB3D1EEE907600038449 /* SkyWay.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SkyWay.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,7 +49,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				71F5AB3F1EEE907D00038449 /* SkyWay.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,7 +58,6 @@
 		71F5AB171EEE83F200038449 = {
 			isa = PBXGroup;
 			children = (
-				71F5AB3D1EEE907600038449 /* SkyWay.framework */,
 				71F5AB221EEE83F200038449 /* eclwebrtc-ios-sample-mesh-textchat */,
 				71F5AB211EEE83F200038449 /* Products */,
 			);
