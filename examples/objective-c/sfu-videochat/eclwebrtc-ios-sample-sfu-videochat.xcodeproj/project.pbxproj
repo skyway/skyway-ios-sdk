@@ -7,13 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		348B539E19F1BE5200B8FB4D /* Pods_eclwebrtc_ios_sample_sfu_videochat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECC9224F869DAC4D2AAA6085 /* Pods_eclwebrtc_ios_sample_sfu_videochat.framework */; };
 		715359B91EEFCF71006C4452 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 715359B81EEFCF71006C4452 /* main.m */; };
 		715359BC1EEFCF71006C4452 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 715359BB1EEFCF71006C4452 /* AppDelegate.m */; };
 		715359BF1EEFCF71006C4452 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 715359BE1EEFCF71006C4452 /* ViewController.m */; };
 		715359C21EEFCF71006C4452 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 715359C01EEFCF71006C4452 /* Main.storyboard */; };
 		715359C41EEFCF71006C4452 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 715359C31EEFCF71006C4452 /* Assets.xcassets */; };
 		715359C71EEFCF71006C4452 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 715359C51EEFCF71006C4452 /* LaunchScreen.storyboard */; };
+		715359D01EEFD027006C4452 /* SkyWay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 715359CE1EEFD020006C4452 /* SkyWay.framework */; };
+		715359D11EEFD027006C4452 /* SkyWay.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 715359CE1EEFD020006C4452 /* SkyWay.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		716A09521EF0E8C60026D801 /* RoomCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 716A09501EF0E8C60026D801 /* RoomCollectionViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -24,6 +25,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				715359D11EEFD027006C4452 /* SkyWay.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -41,11 +43,9 @@
 		715359C31EEFCF71006C4452 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		715359C61EEFCF71006C4452 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		715359C81EEFCF71006C4452 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		715359CE1EEFD020006C4452 /* SkyWay.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SkyWay.framework; sourceTree = "<group>"; };
 		716A09501EF0E8C60026D801 /* RoomCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RoomCollectionViewController.m; sourceTree = "<group>"; };
 		716A09511EF0E8C60026D801 /* RoomCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RoomCollectionViewController.h; sourceTree = "<group>"; };
-		C408B0C1EA739BC550EEB0B2 /* Pods-eclwebrtc-ios-sample-sfu-videochat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eclwebrtc-ios-sample-sfu-videochat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-eclwebrtc-ios-sample-sfu-videochat/Pods-eclwebrtc-ios-sample-sfu-videochat.debug.xcconfig"; sourceTree = "<group>"; };
-		E07DBAC98AB8F3FC065DBCFC /* Pods-eclwebrtc-ios-sample-sfu-videochat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eclwebrtc-ios-sample-sfu-videochat.release.xcconfig"; path = "Pods/Target Support Files/Pods-eclwebrtc-ios-sample-sfu-videochat/Pods-eclwebrtc-ios-sample-sfu-videochat.release.xcconfig"; sourceTree = "<group>"; };
-		ECC9224F869DAC4D2AAA6085 /* Pods_eclwebrtc_ios_sample_sfu_videochat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_eclwebrtc_ios_sample_sfu_videochat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,29 +53,19 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				348B539E19F1BE5200B8FB4D /* Pods_eclwebrtc_ios_sample_sfu_videochat.framework in Frameworks */,
+				715359D01EEFD027006C4452 /* SkyWay.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		414F446255DB4DF0C3723CD5 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				C408B0C1EA739BC550EEB0B2 /* Pods-eclwebrtc-ios-sample-sfu-videochat.debug.xcconfig */,
-				E07DBAC98AB8F3FC065DBCFC /* Pods-eclwebrtc-ios-sample-sfu-videochat.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 		715359AB1EEFCF71006C4452 = {
 			isa = PBXGroup;
 			children = (
+				715359CE1EEFD020006C4452 /* SkyWay.framework */,
 				715359B61EEFCF71006C4452 /* eclwebrtc-ios-sample-sfu-videochat */,
 				715359B51EEFCF71006C4452 /* Products */,
-				414F446255DB4DF0C3723CD5 /* Pods */,
-				7940841FE4F58D3DF8277A8C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -113,14 +103,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		7940841FE4F58D3DF8277A8C /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				ECC9224F869DAC4D2AAA6085 /* Pods_eclwebrtc_ios_sample_sfu_videochat.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -128,12 +110,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 715359CB1EEFCF71006C4452 /* Build configuration list for PBXNativeTarget "eclwebrtc-ios-sample-sfu-videochat" */;
 			buildPhases = (
-				5F90FD65C3A33941D101DAC1 /* [CP] Check Pods Manifest.lock */,
 				715359B01EEFCF71006C4452 /* Sources */,
 				715359B11EEFCF71006C4452 /* Frameworks */,
 				715359B21EEFCF71006C4452 /* Resources */,
 				715359D21EEFD028006C4452 /* Embed Frameworks */,
-				EA4134CD373170159FE2F993 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -189,45 +169,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		5F90FD65C3A33941D101DAC1 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-eclwebrtc-ios-sample-sfu-videochat-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		EA4134CD373170159FE2F993 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-eclwebrtc-ios-sample-sfu-videochat/Pods-eclwebrtc-ios-sample-sfu-videochat-frameworks.sh",
-				"${PODS_ROOT}/SkyWay/SkyWay.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SkyWay.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-eclwebrtc-ios-sample-sfu-videochat/Pods-eclwebrtc-ios-sample-sfu-videochat-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		715359B01EEFCF71006C4452 /* Sources */ = {
@@ -357,7 +298,6 @@
 		};
 		715359CC1EEFCF71006C4452 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C408B0C1EA739BC550EEB0B2 /* Pods-eclwebrtc-ios-sample-sfu-videochat.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = "";
@@ -376,7 +316,6 @@
 		};
 		715359CD1EEFCF71006C4452 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E07DBAC98AB8F3FC065DBCFC /* Pods-eclwebrtc-ios-sample-sfu-videochat.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = "";
