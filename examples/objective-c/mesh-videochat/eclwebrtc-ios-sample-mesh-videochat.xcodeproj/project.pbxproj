@@ -13,8 +13,6 @@
 		71CAC8141EEE1B860090B2B0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71CAC8121EEE1B860090B2B0 /* Main.storyboard */; };
 		71CAC8161EEE1B860090B2B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71CAC8151EEE1B860090B2B0 /* Assets.xcassets */; };
 		71CAC8191EEE1B860090B2B0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71CAC8171EEE1B860090B2B0 /* LaunchScreen.storyboard */; };
-		71CAC8221EEE26B40090B2B0 /* SkyWay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71CAC8201EEE26AE0090B2B0 /* SkyWay.framework */; };
-		71CAC8231EEE26B40090B2B0 /* SkyWay.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 71CAC8201EEE26AE0090B2B0 /* SkyWay.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		71CAC8271EEE49100090B2B0 /* RoomCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 71CAC8261EEE49100090B2B0 /* RoomCollectionViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -25,7 +23,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				71CAC8231EEE26B40090B2B0 /* SkyWay.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -43,7 +40,6 @@
 		71CAC8151EEE1B860090B2B0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		71CAC8181EEE1B860090B2B0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		71CAC81A1EEE1B870090B2B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		71CAC8201EEE26AE0090B2B0 /* SkyWay.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SkyWay.framework; sourceTree = "<group>"; };
 		71CAC8251EEE49100090B2B0 /* RoomCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RoomCollectionViewController.h; sourceTree = "<group>"; };
 		71CAC8261EEE49100090B2B0 /* RoomCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RoomCollectionViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -53,7 +49,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				71CAC8221EEE26B40090B2B0 /* SkyWay.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,7 +58,6 @@
 		71CAC7FD1EEE1B860090B2B0 = {
 			isa = PBXGroup;
 			children = (
-				71CAC8201EEE26AE0090B2B0 /* SkyWay.framework */,
 				71CAC8081EEE1B860090B2B0 /* eclwebrtc-ios-sample-mesh-videochat */,
 				71CAC8071EEE1B860090B2B0 /* Products */,
 			);
