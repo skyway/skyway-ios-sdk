@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		18C4E993E88EA3C3EB9FA3C1 /* Pods_eclwebrtc_ios_sample_p2p_videochat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0130EFA1ECB51A5689FDB05 /* Pods_eclwebrtc_ios_sample_p2p_videochat.framework */; };
 		7115A6491EE65CEC006D989A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7115A6481EE65CEC006D989A /* main.m */; };
 		7115A64C1EE65CEC006D989A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7115A64B1EE65CEC006D989A /* AppDelegate.m */; };
 		7115A64F1EE65CEC006D989A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7115A64E1EE65CEC006D989A /* ViewController.m */; };
@@ -43,9 +42,6 @@
 		7115A6581EE65CEC006D989A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		716137981EE78C7700BED2A5 /* PeerListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PeerListViewController.h; sourceTree = "<group>"; };
 		716137991EE78C7700BED2A5 /* PeerListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PeerListViewController.m; sourceTree = "<group>"; };
-		B989CF34F66DA7DED0A2E657 /* Pods-eclwebrtc-ios-sample-p2p-videochat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eclwebrtc-ios-sample-p2p-videochat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-eclwebrtc-ios-sample-p2p-videochat/Pods-eclwebrtc-ios-sample-p2p-videochat.debug.xcconfig"; sourceTree = "<group>"; };
-		DE70785B0A845A720B9ACDC5 /* Pods-eclwebrtc-ios-sample-p2p-videochat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eclwebrtc-ios-sample-p2p-videochat.release.xcconfig"; path = "Pods/Target Support Files/Pods-eclwebrtc-ios-sample-p2p-videochat/Pods-eclwebrtc-ios-sample-p2p-videochat.release.xcconfig"; sourceTree = "<group>"; };
-		F0130EFA1ECB51A5689FDB05 /* Pods_eclwebrtc_ios_sample_p2p_videochat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_eclwebrtc_ios_sample_p2p_videochat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,28 +49,17 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				18C4E993E88EA3C3EB9FA3C1 /* Pods_eclwebrtc_ios_sample_p2p_videochat.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		062AF6B3E75CD3AE8F18B83C /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				F0130EFA1ECB51A5689FDB05 /* Pods_eclwebrtc_ios_sample_p2p_videochat.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		7115A63B1EE65CEC006D989A = {
 			isa = PBXGroup;
 			children = (
 				7115A6461EE65CEC006D989A /* eclwebrtc-ios-sample-p2p-videochat */,
 				7115A6451EE65CEC006D989A /* Products */,
-				8AFA92437C04DE58D114C951 /* Pods */,
-				062AF6B3E75CD3AE8F18B83C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -112,15 +97,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		8AFA92437C04DE58D114C951 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				B989CF34F66DA7DED0A2E657 /* Pods-eclwebrtc-ios-sample-p2p-videochat.debug.xcconfig */,
-				DE70785B0A845A720B9ACDC5 /* Pods-eclwebrtc-ios-sample-p2p-videochat.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -128,12 +104,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7115A65B1EE65CEC006D989A /* Build configuration list for PBXNativeTarget "eclwebrtc-ios-sample-p2p-videochat" */;
 			buildPhases = (
-				7315192BAF325E446FF0276D /* [CP] Check Pods Manifest.lock */,
 				7115A6401EE65CEC006D989A /* Sources */,
 				7115A6411EE65CEC006D989A /* Frameworks */,
 				7115A6421EE65CEC006D989A /* Resources */,
 				7115A6671EE65FFC006D989A /* Embed Frameworks */,
-				2898D61988063EE743F9AC97 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -192,45 +166,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		2898D61988063EE743F9AC97 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-eclwebrtc-ios-sample-p2p-videochat/Pods-eclwebrtc-ios-sample-p2p-videochat-frameworks.sh",
-				"${PODS_ROOT}/SkyWay/SkyWay.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SkyWay.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-eclwebrtc-ios-sample-p2p-videochat/Pods-eclwebrtc-ios-sample-p2p-videochat-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		7315192BAF325E446FF0276D /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-eclwebrtc-ios-sample-p2p-videochat-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		7115A6401EE65CEC006D989A /* Sources */ = {
@@ -360,7 +295,6 @@
 		};
 		7115A65C1EE65CEC006D989A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B989CF34F66DA7DED0A2E657 /* Pods-eclwebrtc-ios-sample-p2p-videochat.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = "";
@@ -379,7 +313,6 @@
 		};
 		7115A65D1EE65CEC006D989A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DE70785B0A845A720B9ACDC5 /* Pods-eclwebrtc-ios-sample-p2p-videochat.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = "";

@@ -14,7 +14,6 @@
 		71F5AB301EEE83F200038449 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71F5AB2F1EEE83F200038449 /* Assets.xcassets */; };
 		71F5AB331EEE83F200038449 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71F5AB311EEE83F200038449 /* LaunchScreen.storyboard */; };
 		71F5AB3C1EEE88EF00038449 /* TextChatTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 71F5AB3B1EEE88EF00038449 /* TextChatTableViewController.m */; };
-		C4AC7BDE72F69973C7A882F0 /* Pods_eclwebrtc_ios_sample_mesh_textchat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C55BED6229CC8AEF80290948 /* Pods_eclwebrtc_ios_sample_mesh_textchat.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,8 +30,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		5BB88A3E73CBC889696CB149 /* Pods-eclwebrtc-ios-sample-mesh-textchat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eclwebrtc-ios-sample-mesh-textchat.release.xcconfig"; path = "Pods/Target Support Files/Pods-eclwebrtc-ios-sample-mesh-textchat/Pods-eclwebrtc-ios-sample-mesh-textchat.release.xcconfig"; sourceTree = "<group>"; };
-		71C47FB934F72AC8EEC49D41 /* Pods-eclwebrtc-ios-sample-mesh-textchat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eclwebrtc-ios-sample-mesh-textchat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-eclwebrtc-ios-sample-mesh-textchat/Pods-eclwebrtc-ios-sample-mesh-textchat.debug.xcconfig"; sourceTree = "<group>"; };
 		71F5AB201EEE83F200038449 /* eclwebrtc-ios-sample-mesh-textchat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "eclwebrtc-ios-sample-mesh-textchat.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		71F5AB241EEE83F200038449 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		71F5AB261EEE83F200038449 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -45,7 +42,6 @@
 		71F5AB341EEE83F200038449 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		71F5AB3A1EEE88EF00038449 /* TextChatTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextChatTableViewController.h; sourceTree = "<group>"; };
 		71F5AB3B1EEE88EF00038449 /* TextChatTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextChatTableViewController.m; sourceTree = "<group>"; };
-		C55BED6229CC8AEF80290948 /* Pods_eclwebrtc_ios_sample_mesh_textchat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_eclwebrtc_ios_sample_mesh_textchat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,7 +49,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C4AC7BDE72F69973C7A882F0 /* Pods_eclwebrtc_ios_sample_mesh_textchat.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,8 +60,6 @@
 			children = (
 				71F5AB221EEE83F200038449 /* eclwebrtc-ios-sample-mesh-textchat */,
 				71F5AB211EEE83F200038449 /* Products */,
-				BE53A00E130E5B3839CE736F /* Pods */,
-				A265393739F3C60CDB1F1F06 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -104,23 +97,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		A265393739F3C60CDB1F1F06 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				C55BED6229CC8AEF80290948 /* Pods_eclwebrtc_ios_sample_mesh_textchat.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		BE53A00E130E5B3839CE736F /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				71C47FB934F72AC8EEC49D41 /* Pods-eclwebrtc-ios-sample-mesh-textchat.debug.xcconfig */,
-				5BB88A3E73CBC889696CB149 /* Pods-eclwebrtc-ios-sample-mesh-textchat.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -128,12 +104,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 71F5AB371EEE83F200038449 /* Build configuration list for PBXNativeTarget "eclwebrtc-ios-sample-mesh-textchat" */;
 			buildPhases = (
-				F394C7BD1A75FF13CAC581A6 /* [CP] Check Pods Manifest.lock */,
 				71F5AB1C1EEE83F200038449 /* Sources */,
 				71F5AB1D1EEE83F200038449 /* Frameworks */,
 				71F5AB1E1EEE83F200038449 /* Resources */,
 				71F5AB411EEE907E00038449 /* Embed Frameworks */,
-				52241729B64EFC839E583864 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -189,45 +163,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		52241729B64EFC839E583864 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-eclwebrtc-ios-sample-mesh-textchat/Pods-eclwebrtc-ios-sample-mesh-textchat-frameworks.sh",
-				"${PODS_ROOT}/SkyWay/SkyWay.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SkyWay.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-eclwebrtc-ios-sample-mesh-textchat/Pods-eclwebrtc-ios-sample-mesh-textchat-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		F394C7BD1A75FF13CAC581A6 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-eclwebrtc-ios-sample-mesh-textchat-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		71F5AB1C1EEE83F200038449 /* Sources */ = {
@@ -357,7 +292,6 @@
 		};
 		71F5AB381EEE83F200038449 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 71C47FB934F72AC8EEC49D41 /* Pods-eclwebrtc-ios-sample-mesh-textchat.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = "";
@@ -376,7 +310,6 @@
 		};
 		71F5AB391EEE83F200038449 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5BB88A3E73CBC889696CB149 /* Pods-eclwebrtc-ios-sample-mesh-textchat.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = "";

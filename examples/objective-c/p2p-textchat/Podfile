@@ -5,7 +5,6 @@ def install_pods
   pod 'SkyWay'
 end
 
-
 target 'eclwebrtc-ios-sample-p2p-textchat' do
   install_pods
 end
