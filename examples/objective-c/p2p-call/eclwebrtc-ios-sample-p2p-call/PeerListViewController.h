@@ -13,6 +13,7 @@
 
 @interface PeerListViewController : UITableViewController
 
+@property (nonatomic, nonnull) UITableView* tableView;
 @property (strong, nonatomic) NSArray* items;
 @property (nonatomic, weak) id<PeerListDelegate> delegate;
 
