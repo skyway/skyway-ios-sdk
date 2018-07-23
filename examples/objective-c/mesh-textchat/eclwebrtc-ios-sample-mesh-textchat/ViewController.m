@@ -50,15 +50,15 @@ static NSString *const kDomain = @"yourDomain";
     // OPEN
     [_peer on:SKW_PEER_EVENT_OPEN callback:^(NSObject* obj) {
         // Show my ID
-        _strOwnId = (NSString*)obj;
-        _idLabel.text = _strOwnId;
+        self->_strOwnId = (NSString*)obj;
+        self->_idLabel.text = self->_strOwnId;
     }];
     
     // CLOSE
     [_peer on:SKW_PEER_EVENT_CLOSE callback:^(NSObject* obj) {
-        _idLabel.text = @"N/A";
+        self->_idLabel.text = @"N/A";
         [SKWNavigator terminate];
-        _peer = nil;
+        self->_peer = nil;
     }];
     
     [_peer on:SKW_PEER_EVENT_DISCONNECTED callback:^(NSObject* obj) {}];
@@ -113,8 +113,8 @@ static NSString *const kDomain = @"yourDomain";
     [_meshRoom on:SKW_ROOM_EVENT_CLOSE callback:^(NSObject* arg) {
         NSString* roomName = (NSString*)arg;
         NSLog(@"SKW_ROOM_EVENT_CLOSE: %@", roomName);
-        [_meshRoom offAll];
-        _meshRoom = nil;
+        [self->_meshRoom offAll];
+        self->_meshRoom = nil;
     }];
     [_meshRoom on:SKW_ROOM_EVENT_PEER_JOIN callback:^(NSObject* arg) {
         NSString* peerId_ = (NSString*)arg;
@@ -130,7 +130,7 @@ static NSString *const kDomain = @"yourDomain";
         if ([msg.data isKindOfClass:[NSString class]]) {
             NSString* data = (NSString*)msg.data;
             NSLog(@"SKW_ROOM_EVENT_DATA(string): sender=%@, data=%@", peerId_, data);
-            [_tableViewController setChatMessage:peerId_ text:data];
+            [self->_tableViewController setChatMessage:peerId_ text:data];
         }
     }];
     

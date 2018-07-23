@@ -63,8 +63,8 @@ typedef NS_ENUM(NSInteger, CallState){
     [_peer on:SKW_PEER_EVENT_OPEN callback:^(NSObject* obj) {
         
         // Show my ID
-        _strOwnId = (NSString*) obj;
-        _idLabel.text = _strOwnId;
+        self->_strOwnId = (NSString*) obj;
+        self->_idLabel.text = self->_strOwnId;
         
         // Set MediaConstraints
         SKWMediaConstraints* constraints = [[SKWMediaConstraints alloc] init];
@@ -73,17 +73,17 @@ typedef NS_ENUM(NSInteger, CallState){
         constraints.cameraPosition = SKW_CAMERA_POSITION_FRONT;
         
         // Get a local MediaStream & show it
-        [SKWNavigator initialize:_peer];
-        _localStream = [SKWNavigator getUserMedia:constraints];
-        [_localStream addVideoRenderer:_localView track:0];
+        [SKWNavigator initialize:self->_peer];
+        self->_localStream = [SKWNavigator getUserMedia:constraints];
+        [self->_localStream addVideoRenderer:self->_localView track:0];
         
     }];
     
     // CALL (Incoming call)
     [_peer on:SKW_PEER_EVENT_CALL callback:^(NSObject* obj) {
         if (YES == [obj isKindOfClass:[SKWMediaConnection class]]) {
-            _mediaConnection = (SKWMediaConnection *)obj;
-            _callState = CALL_STATE_CALLING;
+            self->_mediaConnection = (SKWMediaConnection *)obj;
+            self->_callState = CALL_STATE_CALLING;
             [self showIncomingCallAlert];
         }
     }];
@@ -91,7 +91,7 @@ typedef NS_ENUM(NSInteger, CallState){
     // CONNECT (Custom Signaling Channel for a call)
     [_peer on:SKW_PEER_EVENT_CONNECTION callback:^(NSObject* obj) {
         if (YES == [obj isKindOfClass:[SKWDataConnection class]]) {
-            _signalingChannel = (SKWDataConnection *)obj;
+            self->_signalingChannel = (SKWDataConnection *)obj;
             [self setSignalingCallbacks];
         }
     }];
@@ -138,33 +138,33 @@ typedef NS_ENUM(NSInteger, CallState){
 
     [_mediaConnection on:SKW_MEDIACONNECTION_EVENT_STREAM callback:^(NSObject* obj) {
          if (YES == [obj isKindOfClass:[SKWMediaStream class]]) {
-             if (CALL_STATE_ESTABLISHED == _callState) {
+             if (CALL_STATE_ESTABLISHED == self->_callState) {
                  return;
              }
              
              // Change connection state
-             _callState = CALL_STATE_ESTABLISHED;
+             self->_callState = CALL_STATE_ESTABLISHED;
              [self updateActionButtonTitle];
              
              // Get a remote MediaStream & show it
-             _remoteStream = (SKWMediaStream *)obj;
+             self->_remoteStream = (SKWMediaStream *)obj;
              dispatch_async(dispatch_get_main_queue(), ^{
-                 [_remoteStream addVideoRenderer:_remoteView track:0];
+                 [self->_remoteStream addVideoRenderer:self->_remoteView track:0];
              });
              
          }
      }];
     
     [_mediaConnection on:SKW_MEDIACONNECTION_EVENT_CLOSE callback:^(NSObject* obj) {
-        if (CALL_STATE_ESTABLISHED != _callState) {
+        if (CALL_STATE_ESTABLISHED != self->_callState) {
             return;
         }
 
         [self closeRemoteStream];
         [self unsetMediaCallbacks];
-        _mediaConnection = nil;
-        [_signalingChannel close];
-        _callState = CALL_STATE_TERMINATED;
+        self->_mediaConnection = nil;
+        [self->_signalingChannel close];
+        self->_callState = CALL_STATE_TERMINATED;
         [self updateActionButtonTitle];
 
      }];
@@ -194,15 +194,15 @@ typedef NS_ENUM(NSInteger, CallState){
         NSLog(@"[On/Data] %@", message);
         
         if ([message isEqualToString:@"reject"]) {
-            [_mediaConnection close];
-            [_signalingChannel close];
-            _callState = CALL_STATE_TERMINATED;
+            [self->_mediaConnection close];
+            [self->_signalingChannel close];
+            self->_callState = CALL_STATE_TERMINATED;
             [self updateActionButtonTitle];
         }
         else if ([message isEqualToString:@"cancel"]) {
-            [_mediaConnection close];
-            [_signalingChannel close];
-            _callState = CALL_STATE_TERMINATED;
+            [self->_mediaConnection close];
+            [self->_signalingChannel close];
+            self->_callState = CALL_STATE_TERMINATED;
             [self updateActionButtonTitle];
             [self dismissIncomingCallAlert];
         }
@@ -282,13 +282,13 @@ typedef NS_ENUM(NSInteger, CallState){
         // Get all IDs connected to the server
         [_peer listAllPeers:^(NSArray* aryPeers){
             NSMutableArray* maItems = [[NSMutableArray alloc] init];
-            if (nil == _strOwnId) {
+            if (nil == self->_strOwnId) {
                  return;
             }
             
             // Exclude my own ID
             for (NSString* strValue in aryPeers) {
-                if (NSOrderedSame != [_strOwnId caseInsensitiveCompare:strValue]) {
+                if (NSOrderedSame != [self->_strOwnId caseInsensitiveCompare:strValue]) {
                     [maItems addObject:strValue];
                 }
             }
@@ -341,16 +341,16 @@ typedef NS_ENUM(NSInteger, CallState){
 - (void)updateActionButtonTitle {
     dispatch_async(dispatch_get_main_queue(), ^{
         NSString* title;
-        if(CALL_STATE_TERMINATED == _callState){
+        if(CALL_STATE_TERMINATED == self->_callState){
             title = @"Make Call";
         }
-        else if(CALL_STATE_CALLING == _callState){
+        else if(CALL_STATE_CALLING == self->_callState){
             title = @"Cancel";
         }
         else {
             title = @"Hang up";
         }
-        [_actionButton setTitle:title forState:UIControlStateNormal];
+        [self->_actionButton setTitle:title forState:UIControlStateNormal];
     });
 }
 
@@ -391,15 +391,15 @@ typedef NS_ENUM(NSInteger, CallState){
                                 style:UIAlertActionStyleDefault
                                 handler:^(UIAlertAction *action) {
                                     [self setMediaCallbacks];
-                                    [_mediaConnection answer:_localStream];
+                                    [self->_mediaConnection answer:self->_localStream];
                                 }]];
 
     [_alertController addAction:[UIAlertAction
                                 actionWithTitle:@"Reject"
                                 style:UIAlertActionStyleDefault
                                 handler:^(UIAlertAction *action) {
-                                    [_signalingChannel send:@"reject"];
-                                    _callState = CALL_STATE_TERMINATED;
+                                    [self->_signalingChannel send:@"reject"];
+                                    self->_callState = CALL_STATE_TERMINATED;
                                 }]];
 
     [self presentViewController:_alertController animated:YES completion:nil];

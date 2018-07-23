@@ -52,8 +52,8 @@ static NSString *const kDomain = @"yourDomain";
     [_peer on:SKW_PEER_EVENT_OPEN callback:^(NSObject* obj) {
         
         // Show my ID
-        _strOwnId = (NSString*)obj;
-        _idLabel.text = _strOwnId;
+        self->_strOwnId = (NSString*)obj;
+        self->_idLabel.text = self->_strOwnId;
         
         // Set MediaConstraints
         SKWMediaConstraints* constraints = [[SKWMediaConstraints alloc] init];
@@ -62,17 +62,17 @@ static NSString *const kDomain = @"yourDomain";
         constraints.cameraPosition = SKW_CAMERA_POSITION_FRONT;
         
         // Get a local MediaStream & show it
-        [SKWNavigator initialize:_peer];
-        _localStream = [SKWNavigator getUserMedia:constraints];
-        [_localStream addVideoRenderer:_localView track:0];
+        [SKWNavigator initialize:self->_peer];
+        self->_localStream = [SKWNavigator getUserMedia:constraints];
+        [self->_localStream addVideoRenderer:self->_localView track:0];
         
     }];
     
     // CLOSE
     [_peer on:SKW_PEER_EVENT_CLOSE callback:^(NSObject* obj) {
-        _idLabel.text = @"N/A";
+        self->_idLabel.text = @"N/A";
         [SKWNavigator terminate];
-        _peer = nil;
+        self->_peer = nil;
     }];
     
     [_peer on:SKW_PEER_EVENT_DISCONNECTED callback:^(NSObject* obj) {}];
@@ -129,19 +129,19 @@ static NSString *const kDomain = @"yourDomain";
     [_sfuRoom on:SKW_ROOM_EVENT_CLOSE callback:^(NSObject* arg) {
         NSString* roomName = (NSString*)arg;
         NSLog(@"SKW_ROOM_EVENT_CLOSE: %@", roomName);
-        [_collectionViewController removeAllMediaStreams];
-        [_sfuRoom offAll];
-        _sfuRoom = nil;
+        [self->_collectionViewController removeAllMediaStreams];
+        [self->_sfuRoom offAll];
+        self->_sfuRoom = nil;
     }];
     [_sfuRoom on:SKW_ROOM_EVENT_STREAM callback:^(NSObject* arg) {
         SKWMediaStream* stream = (SKWMediaStream*)arg;
         NSLog(@"SKW_ROOM_EVENT_STREAM: %@", stream);
-        [_collectionViewController addMediaStream:stream];
+        [self->_collectionViewController addMediaStream:stream];
     }];
     [_sfuRoom on:SKW_ROOM_EVENT_REMOVE_STREAM callback:^(NSObject* arg) {
         SKWMediaStream* stream = (SKWMediaStream*)arg;
         NSLog(@"SKW_ROOM_EVENT_REMOVE_STREAM: %@", stream);
-        [_collectionViewController removeMediaStream:stream];
+        [self->_collectionViewController removeMediaStream:stream];
     }];
     [_sfuRoom on:SKW_ROOM_EVENT_PEER_JOIN callback:^(NSObject* arg) {
         NSString* peerId_ = (NSString*)arg;
@@ -150,7 +150,7 @@ static NSString *const kDomain = @"yourDomain";
     [_sfuRoom on:SKW_ROOM_EVENT_PEER_LEAVE callback:^(NSObject* arg) {
         NSString* peerId_ = (NSString*)arg;
         NSLog(@"SKW_ROOM_EVENT_PEER_LEAVE: %@", peerId_);
-        [_collectionViewController removePeerStreams:peerId_];
+        [self->_collectionViewController removePeerStreams:peerId_];
     }];
 }
 
