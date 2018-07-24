@@ -14,5 +14,4 @@ SkyWay simplifies peer-to-peer data, video, and audio calls using WebRTC.
   s.vendored_frameworks = 'SkyWay.framework'
   s.source_files  = 'SkyWay.framework/Headers/*.h'
   s.preserve_paths  = 'SkyWay.framework'
-  s.xcconfig  = { 'LIBRARY_SEARCH_PATHS' => '"$(PODS_ROOT)/SkyWay.framework/**"' }
 end
