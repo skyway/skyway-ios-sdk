@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -80,20 +80,24 @@
                             <constraint firstItem="WUd-3z-XfC" firstAttribute="top" secondItem="OQ3-dV-PEu" secondAttribute="bottom" constant="10" id="I9d-i7-HtD"/>
                             <constraint firstItem="7Zj-Nr-Dke" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="10" id="KMU-ew-4fv"/>
                             <constraint firstItem="VC2-0h-3uL" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="10" id="Knj-Kt-Ht6"/>
+                            <constraint firstItem="KNx-JS-SqV" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" symbolic="YES" id="M8T-vb-t3P"/>
                             <constraint firstItem="tgb-F8-Hgz" firstAttribute="width" secondItem="5vp-RF-Ma6" secondAttribute="width" multiplier="0.6" id="MVE-IK-FCJ"/>
                             <constraint firstItem="VC2-0h-3uL" firstAttribute="centerY" secondItem="tgb-F8-Hgz" secondAttribute="centerY" id="MbM-PB-BUf"/>
                             <constraint firstItem="7Zj-Nr-Dke" firstAttribute="width" secondItem="5vp-RF-Ma6" secondAttribute="width" multiplier="0.6" id="Q37-7c-5bl"/>
+                            <constraint firstItem="VC2-0h-3uL" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" symbolic="YES" id="QWg-sY-5zj"/>
                             <constraint firstItem="VC2-0h-3uL" firstAttribute="width" secondItem="5vp-RF-Ma6" secondAttribute="width" multiplier="0.3" id="Qlq-Fw-jrw"/>
                             <constraint firstItem="tgb-F8-Hgz" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="10" id="V7A-s5-RcN"/>
                             <constraint firstItem="5vp-RF-Ma6" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="X8U-dm-jrb"/>
                             <constraint firstItem="WUd-3z-XfC" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="10" id="YIQ-Nf-d9a"/>
                             <constraint firstAttribute="trailing" secondItem="5vp-RF-Ma6" secondAttribute="trailing" id="gHe-h4-fag"/>
                             <constraint firstItem="tgb-F8-Hgz" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="10" id="iP8-GL-As7"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="tgb-F8-Hgz" secondAttribute="trailingMargin" id="k0T-4e-Wfw"/>
                             <constraint firstItem="KNx-JS-SqV" firstAttribute="width" secondItem="5vp-RF-Ma6" secondAttribute="width" multiplier="0.3" id="l0S-H3-l3e"/>
                             <constraint firstItem="KNx-JS-SqV" firstAttribute="centerY" secondItem="7Zj-Nr-Dke" secondAttribute="centerY" id="ovg-JX-9oU"/>
                             <constraint firstItem="OQ3-dV-PEu" firstAttribute="top" secondItem="KNx-JS-SqV" secondAttribute="bottom" constant="10" id="q7a-L5-l1W"/>
                             <constraint firstItem="KNx-JS-SqV" firstAttribute="top" secondItem="VC2-0h-3uL" secondAttribute="bottom" constant="10" id="rZ5-3e-0YB"/>
                             <constraint firstItem="VC2-0h-3uL" firstAttribute="trailing" secondItem="KNx-JS-SqV" secondAttribute="trailing" id="sBY-ha-Stq"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="7Zj-Nr-Dke" secondAttribute="trailingMargin" id="sWe-bP-bGv"/>
                             <constraint firstAttribute="trailingMargin" secondItem="OQ3-dV-PEu" secondAttribute="trailing" constant="10" id="wVr-fj-3BD"/>
                             <constraint firstItem="OQ3-dV-PEu" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="10" id="yk4-DX-I8w"/>
                         </constraints>

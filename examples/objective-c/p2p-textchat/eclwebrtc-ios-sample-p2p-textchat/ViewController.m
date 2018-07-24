@@ -68,14 +68,14 @@ static NSString *const kDomain = @"yourDomain";
     [_peer on:SKW_PEER_EVENT_OPEN callback:^(NSObject* obj) {
         
         // Show my ID
-        _strOwnId = (NSString*) obj;
-        _idLabel.text = _strOwnId;
+        self->_strOwnId = (NSString*) obj;
+        self->_idLabel.text = self->_strOwnId;
         
     }];
     
     [_peer on:SKW_PEER_EVENT_CONNECTION callback:^(NSObject* obj) {
         if (YES == [obj isKindOfClass:[SKWDataConnection class]]) {
-            _dataConnection = (SKWDataConnection *)obj;
+            self->_dataConnection = (SKWDataConnection *)obj;
             [self setDataCallbacks];
         }
     }];
@@ -134,16 +134,16 @@ static NSString *const kDomain = @"yourDomain";
     }
     
     [_dataConnection on:SKW_DATACONNECTION_EVENT_OPEN callback:^(NSObject* obj) {
-        _bConnected = YES;
+        self->_bConnected = YES;
         [self updateUI];
         [self appendLog:@"Connected."];         
      }];
     
     [_dataConnection on:SKW_DATACONNECTION_EVENT_CLOSE callback:^(NSObject* obj) {
-        _bConnected = NO;
+        self->_bConnected = NO;
         [self updateUI];
         [self unsetDataCallbacks];
-        _dataConnection = nil;
+        self->_dataConnection = nil;
         [self appendLog:@"Disconnected."];
      }];
     
@@ -170,7 +170,7 @@ static NSString *const kDomain = @"yourDomain";
             UIImage* image = [[UIImage alloc] initWithData:datData];
             
             dispatch_async(dispatch_get_main_queue(), ^{
-                [_imageView setImage:image];
+                [self->_imageView setImage:image];
             });
             strData = @"Received Image (displayed below)";
         }
@@ -215,9 +215,9 @@ static NSString *const kDomain = @"yourDomain";
 //
 - (void)updateUI {
     dispatch_async(dispatch_get_main_queue(), ^{
-        NSString* title = (_bConnected) ? @"Disconnect" : @"Connect";
-        [_actionButton setTitle:title forState:UIControlStateNormal];
-        [_sendButton setEnabled:_bConnected];
+        NSString* title = (self->_bConnected) ? @"Disconnect" : @"Connect";
+        [self->_actionButton setTitle:title forState:UIControlStateNormal];
+        [self->_sendButton setEnabled:self->_bConnected];
     });
 }
 
@@ -226,11 +226,11 @@ static NSString *const kDomain = @"yourDomain";
 //
 - (void)appendLog:(NSString*)str{
     dispatch_async(dispatch_get_main_queue(), ^{
-        NSString* newStr = [NSString stringWithFormat:@"%@\n%@",_messageView.text,str];
-        [_messageView setText:newStr];
+        NSString* newStr = [NSString stringWithFormat:@"%@\n%@",self->_messageView.text,str];
+        [self->_messageView setText:newStr];
         
-        NSRange rng = NSMakeRange(_messageView.text.length + 1, 0);
-        [_messageView scrollRangeToVisible:rng];
+        NSRange rng = NSMakeRange(self->_messageView.text.length + 1, 0);
+        [self->_messageView scrollRangeToVisible:rng];
     });
 }
 
@@ -253,13 +253,13 @@ static NSString *const kDomain = @"yourDomain";
         // Get all IDs connected to the server
         [_peer listAllPeers:^(NSArray* aryPeers){
             NSMutableArray* maItems = [[NSMutableArray alloc] init];
-            if (nil == _strOwnId) {
+            if (nil == self->_strOwnId) {
                 return;
             }
             
             // Exclude my own ID
             for (NSString* strValue in aryPeers) {
-                if (NSOrderedSame != [_strOwnId caseInsensitiveCompare:strValue]) {
+                if (NSOrderedSame != [self->_strOwnId caseInsensitiveCompare:strValue]) {
                     [maItems addObject:strValue];
                 }
             }
@@ -315,8 +315,8 @@ static NSString *const kDomain = @"yourDomain";
                                   actionWithTitle:title
                                   style:UIAlertActionStyleDestructive
                                   handler:^(UIAlertAction *action) {
-                                      _uiDataType = i;
-                                      [_dataTypeButton setTitle:title forState:UIControlStateNormal];
+                                      self->_uiDataType = i;
+                                      [self->_dataTypeButton setTitle:title forState:UIControlStateNormal];
                                   }];
         [ac addAction:aaTypes];
     }

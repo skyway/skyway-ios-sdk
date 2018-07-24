@@ -81,11 +81,11 @@ static NSString * const reuseIdentifier = @"Cell";
     [_aryMediaStreams enumerateObjectsUsingBlock:^(id obj, NSUInteger index, BOOL* stop) {
         SKWMediaStream* stream = (SKWMediaStream*)obj;
         NSString* msKey = [NSString stringWithFormat:@"%@:%@", stream.peerId, stream.label];
-        SKWVideo* video = [_aryVideoViews objectForKey:msKey];
+        SKWVideo* video = [self->_aryVideoViews objectForKey:msKey];
         if (nil != video) {
             [stream removeVideoRenderer:video track:0];
             [video removeFromSuperview];
-            [_aryVideoViews removeObjectForKey:msKey];
+            [self->_aryVideoViews removeObjectForKey:msKey];
         }
     }];
     NSAssert(0 == _aryVideoViews.count, @"Video Views leaked.");
