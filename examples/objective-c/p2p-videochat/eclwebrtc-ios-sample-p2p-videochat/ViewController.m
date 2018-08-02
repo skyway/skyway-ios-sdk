@@ -285,4 +285,26 @@ static NSString *const kDomain = @"yourDomain";
     [_localStream setCameraPosition:pos];
 }
 
+//
+// Action for muteButton
+//
+- (IBAction)onMuteButtonClicked:(id)sender {
+    if(nil == _localStream) {
+        return;
+    }
+
+    [_localStream setEnableAudioTrack:0 enable:false];
+}
+
+//
+// Action for unmuteButton
+//
+- (IBAction)onUnmuteButtonClicked:(id)sender {
+    if(nil == _localStream) {
+        return;
+    }
+
+    [_localStream setEnableAudioTrack:0 enable:true];
+}
+
 @end
