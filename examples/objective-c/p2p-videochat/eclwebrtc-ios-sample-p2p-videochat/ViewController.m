@@ -288,7 +288,7 @@ static NSString *const kDomain = @"yourDomain";
 //
 // Action for muteButton
 //
-- (IBAction)onMuteButtonClicked:(id)sender {
+- (IBAction)onAudioMuteButtonClicked:(id)sender {
     if(nil == _localStream) {
         return;
     }
@@ -299,7 +299,7 @@ static NSString *const kDomain = @"yourDomain";
 //
 // Action for unmuteButton
 //
-- (IBAction)onUnmuteButtonClicked:(id)sender {
+- (IBAction)onAudioUnmuteButtonClicked:(id)sender {
     if(nil == _localStream) {
         return;
     }
