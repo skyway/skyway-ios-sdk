@@ -62,6 +62,22 @@
                                     <action selector="onSwitchCameraButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OEH-bA-uRj"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Shx-K5-Zl2">
+                                <rect key="frame" x="64" y="589" width="98" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Audio Unmute"/>
+                                <connections>
+                                    <action selector="onAudioUnmuteButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GRf-Hm-A8t"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hxk-qN-DP9">
+                                <rect key="frame" x="74" y="551" width="78" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Audio Mute"/>
+                                <connections>
+                                    <action selector="onAudioMuteButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6Ug-1f-15S"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
