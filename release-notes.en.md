@@ -2,6 +2,13 @@
 
 [日本語](./release-notes.md)
 
+## [Version 1.0.5](https://github.com/skyway/skyway-ios-sdk/releases/tag/v1.0.5)
+
+### Fixed
+
+- Fixed bug that rarely causes crash of the app when connection to server fails.
+- Fixed bug that it cannot get correct number of audio track in getAudioTrack.
+
 ## [Version 1.0.4](https://github.com/skyway/skyway-ios-sdk/releases/tag/v1.0.4)
 
 ### Fixed
