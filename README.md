@@ -38,6 +38,12 @@ Then, run the following command:
 $ pod install
 ```
 
+## License
+
+[Apache License, Version 2.0](./LICENSE.txt)
+
+[NOTICE](./NOTICE.txt)
+
 ---
 ## SkyWay-iOS-SDK
 
@@ -77,3 +83,9 @@ end
 ```bash
 $ pod install
 ```
+
+## License
+
+[Apache License, Version 2.0](./LICENSE.txt)
+
+[NOTICE](./NOTICE.txt)
