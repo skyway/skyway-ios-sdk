@@ -2,7 +2,16 @@
 
 [English](./release-notes.en.md)
 
-## [Version 1.0.6](https://github.com/skyway/skyway-android-sdk/releases/tag/v1.0.6)
+## [Version 1.1.0](https://github.com/skyway/skyway-ios-sdk/releases/tag/v1.1.0)
+
+### Modified
+- 対象OSを iOS 9.0以上に変更しました。
+
+### Fixed
+
+- サーバとの切断時に意図しない再接続が発生する不具合を解消しました。
+
+## [Version 1.0.6](https://github.com/skyway/skyway-ios-sdk/releases/tag/v1.0.6)
 
 ### Fixed
 
