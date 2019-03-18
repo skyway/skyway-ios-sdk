@@ -321,7 +321,7 @@
 					"$(PROJECT_DIR)/eclwebrtc-ios-sample-p2p-call",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/eclwebrtc-ios-sample-p2p-call/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ntt.ecl-webrtc-ios-sample";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -340,7 +340,7 @@
 					"$(PROJECT_DIR)/eclwebrtc-ios-sample-p2p-call",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/eclwebrtc-ios-sample-p2p-call/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ntt.ecl-webrtc-ios-sample";
 				PRODUCT_NAME = "$(TARGET_NAME)";
