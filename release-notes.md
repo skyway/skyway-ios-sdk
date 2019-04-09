@@ -2,9 +2,21 @@
 
 [English](./release-notes.en.md)
 
+## [Version 1.1.1](https://github.com/skyway/skyway-ios-sdk/releases/tag/v1.1.1)
+
+### Modified
+
+- API認証エラー発生を示すSKW_PEER_ERR_AUTHENTICATIONをPeerErrorに追加しました。
+- SKWPeerクラスにSDKのバージョン確認用のメソッド`(nonnull NSString*)sdkVersion`を追加しました。
+
+### Fixed
+
+- v1.1.0にてAPI認証に失敗する不具合を修正しました。
+
 ## [Version 1.1.0](https://github.com/skyway/skyway-ios-sdk/releases/tag/v1.1.0)
 
 ### Modified
+
 - 対象OSを iOS 9.0以上に変更しました。
 
 ### Fixed
