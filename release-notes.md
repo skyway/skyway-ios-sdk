@@ -2,6 +2,15 @@
 
 [English](./release-notes.en.md)
 
+## [Version 1.2.0](https://github.com/skyway/skyway-ios-sdk/releases/tag/v1.2.0)
+
+### Added
+
+- SKWVideoがAutoLayoutに対応しました。
+- `SKWVideoScalingEnum`として以下の列挙子を追加しました。
+  - `SKW_VIDEO_SCALING_ASPECT_FIT`
+  - `SKW_VIDEO_SCALING_ASPECT_FILL`
+
 ## [Version 1.1.1](https://github.com/skyway/skyway-ios-sdk/releases/tag/v1.1.1)
 
 ### Modified
