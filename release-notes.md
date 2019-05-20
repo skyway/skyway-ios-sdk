@@ -11,6 +11,10 @@
   - `SKW_VIDEO_SCALING_ASPECT_FIT`
   - `SKW_VIDEO_SCALING_ASPECT_FILL`
 
+### Fixed
+
+- cameraPositionの値に関わらずフロントカメラが選択される不具合を修正しました。
+
 ## [Version 1.1.1](https://github.com/skyway/skyway-ios-sdk/releases/tag/v1.1.1)
 
 ### Modified
