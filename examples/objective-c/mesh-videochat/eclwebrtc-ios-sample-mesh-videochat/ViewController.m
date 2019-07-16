@@ -116,7 +116,7 @@ static NSString *const kDomain = @"yourDomain";
     SKWRoomOption* option = [[SKWRoomOption alloc] init];
     option.mode = SKW_ROOM_MODE_MESH;
     option.stream = _localStream;
-    NSString* roomName = [NSString stringWithFormat:@"mesh_video_%@", _roomNameField.text];
+    NSString* roomName = [NSString stringWithFormat:@"%@", _roomNameField.text];
     _meshRoom = (SKWMeshRoom*)[_peer joinRoomWithName:roomName options:option];
     
     //

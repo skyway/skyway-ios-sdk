@@ -100,7 +100,7 @@ static NSString *const kDomain = @"yourDomain";
     //
     SKWRoomOption* option = [[SKWRoomOption alloc] init];
     option.mode = SKW_ROOM_MODE_SFU;
-    NSString* roomName = [NSString stringWithFormat:@"sfu_text_%@", _roomNameField.text];
+    NSString* roomName = [NSString stringWithFormat:@"%@", _roomNameField.text];
     _sfuRoom = (SKWSFURoom*)[_peer joinRoomWithName:roomName options:option];
     
     //
