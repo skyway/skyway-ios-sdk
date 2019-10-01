@@ -320,6 +320,8 @@ static NSString *const kDomain = @"yourDomain";
                                   }];
         [ac addAction:aaTypes];
     }
+    ac.popoverPresentationController.sourceView = self.view;
+    ac.popoverPresentationController.sourceRect = _dataTypeButton.frame;
     
     [self presentViewController:ac animated:YES completion:nil];
 }
