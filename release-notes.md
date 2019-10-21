@@ -2,6 +2,12 @@
 
 [English](./release-notes.en.md)
 
+## [Version 1.2.1](https://github.com/skyway/skyway-ios-sdk/releases/tag/v1.2.1)
+
+### Fixed
+
+- SKWMediaStreamをcloseした時にクラッシュする不具合を修正しました。
+
 ## [Version 1.2.0](https://github.com/skyway/skyway-ios-sdk/releases/tag/v1.2.0)
 
 ### Added
