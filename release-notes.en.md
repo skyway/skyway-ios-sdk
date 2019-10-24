@@ -2,6 +2,12 @@
 
 [日本語](./release-notes.md)
 
+## [Version 1.2.1](https://github.com/skyway/skyway-ios-sdk/releases/tag/v1.2.1)
+
+### Fixed
+
+- Fixed a bug that causes crash of the app when calling `SKWMediaStream#close()`
+
 ## [Version 1.2.0](https://github.com/skyway/skyway-ios-sdk/releases/tag/v1.2.0)
 
 ### Added
