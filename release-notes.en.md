@@ -2,6 +2,12 @@
 
 [日本語](./release-notes.md)
 
+## [Version 1.2.2](https://github.com/skyway/skyway-ios-sdk/releases/tag/v1.2.2)
+
+### Fixed
+
+- Fixed a bug that causes crash that occurred when `SKWNavigator.getUserMedia` calling in the simulator.
+
 ## [Version 1.2.1](https://github.com/skyway/skyway-ios-sdk/releases/tag/v1.2.1)
 
 ### Fixed
