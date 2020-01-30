@@ -2,6 +2,13 @@
 
 [日本語](./release-notes.md)
 
+## [Version 1.2.3](https://github.com/skyway/skyway-ios-sdk/releases/tag/v1.2.3)
+
+### Fixed
+
+- Fixed a bug that causes crash that occurred when emitting `SKW_ROOM_EVENT_PEER_JOIN` or `SKW_ROOM_EVENT_CLOSE` event.
+- Fixed a bug that peerID could not be obtained in `SKW_ROOM_EVENT_PEER_JOIN` event.
+
 ## [Version 1.2.2](https://github.com/skyway/skyway-ios-sdk/releases/tag/v1.2.2)
 
 ### Fixed
