@@ -6,11 +6,11 @@
 
 ### Added
 
-- Added `getStats` function on `SKWMediaconnection`, `SKWDataconnection` for getting statistics of connection.
+- Added `getStats` function on `SKWMediaConnection`, `SKWDataConnection` for getting statistics of connection.
 
 ### Fixed
 
-- Fixed a bug that error occurs when many users `peer.joinRoom` at the same time in Mesh room.
+- Fixed a bug that error occurs when many users `Peer.joinRoom` at the same time in Mesh room.
 
 ### Modified
 - Changed the max size of data that can be sent to 20MB.

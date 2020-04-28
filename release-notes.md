@@ -6,11 +6,11 @@
 
 ### Added
 
-- `SKWMediaconnection`, `SKWDataconnection`に接続中の統計情報を取得する`getStats`関数を追加しました
+- `SKWMediaConnection`, `SKWDataConnection`に接続中の統計情報を取得する`getStats`関数を追加しました
 
 ### Fixed
 
-- Meshルームにおいて、多数のユーザが同時に`peer.joinRoom`するとエラーが発生する不具合を修正しました
+- Meshルームにおいて、多数のユーザが同時に`Peer.joinRoom`するとエラーが発生する不具合を修正しました
 
 ### Modified
 
