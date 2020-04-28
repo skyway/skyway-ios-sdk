@@ -14,7 +14,7 @@
 
 ### Modified
 
-- `SKWMeshRoom`, `SKWSFURoom`の`send`関数において、送信データ量の上限を20MBに変更しました
+- `SKWMeshRoom`, `SKWSFURoom`の`send`関数において、送信可能なデータのサイズ上限を20MBに変更しました
 
 ## [Version 1.2.3](https://github.com/skyway/skyway-ios-sdk/releases/tag/v1.2.3)
 
