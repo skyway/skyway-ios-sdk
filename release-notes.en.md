@@ -13,7 +13,7 @@
 - Fixed a bug that error occurs when many users `Peer.joinRoom` at the same time in Mesh room.
 
 ### Modified
-- Changed the max size of data that can be sent to 20MB.
+- Changed the max size of data to 20MB when calling `SKWMeshRoom.send` or `SKWSFURoom.send`.
 
 ## [Version 1.2.3](https://github.com/skyway/skyway-ios-sdk/releases/tag/v1.2.3)
 
