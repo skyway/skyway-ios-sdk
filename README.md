@@ -5,8 +5,8 @@ SkyWay simplifies peer-to-peer data, video, and audio calls using WebRTC.
 
 ### Learn more
 * [Examples](https://github.com/skyway/skyway-ios-sdk/tree/master/examples)
-* [Tutorial](https://webrtc.ecl.ntt.com/en/ios-tutorial.html)
-* [API Reference](https://webrtc.ecl.ntt.com/en/ios-reference/)
+* [Tutorial](https://webrtc.ecl.ntt.com/en/documents/ios-sdk.html#ios-sdk-tutorial)
+* [API Reference](https://skyway.github.io/en/ios-reference/)
 
 ### Supported OS
 iOS 9+
@@ -52,8 +52,8 @@ SkyWayは、WebRTCを利用したピア·ツー·ピアのデータ、ビデオ�
 
 ### 関連リンク
 * [サンプル](https://github.com/skyway/skyway-ios-sdk/tree/master/examples)
-* [チュートリアル](https://webrtc.ecl.ntt.com/ios-tutorial.html)
-* [API Reference](https://webrtc.ecl.ntt.com/ios-reference/)
+* [チュートリアル](https://webrtc.ecl.ntt.com/documents/ios-sdk.html#%E3%83%81%E3%83%A5%E3%83%BC%E3%83%88%E3%83%AA%E3%82%A2%E3%83%AB)
+* [API Reference](https://skyway.github.io/ios-reference/)
 
 ### 対応OS
 iOS 9+
