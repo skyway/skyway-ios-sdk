@@ -12,22 +12,22 @@
 
 ### Added
 
-- `SKWMediaConnection`, `SKWDataConnection`に接続中の統計情報を取得する`getStats`関数を追加しました
+- `SKWMediaConnection`, `SKWDataConnection`に接続中の統計情報を取得する`getStats`関数を追加しました。
 
 ### Fixed
 
-- 同じ`MeshRoom`に対して多数のユーザが同時に`Peer.joinRoom`した際に、エラーが発生する不具合を修正しました
+- 同じ`MeshRoom`に対して多数のユーザが同時に`Peer.joinRoom`した際に、エラーが発生する不具合を修正しました。
 
 ### Modified
 
-- `SKWMeshRoom`, `SKWSFURoom`の`send`関数において、送信可能なデータのサイズ上限を20MBに変更しました
+- `SKWMeshRoom`, `SKWSFURoom`の`send`関数において、送信可能なデータのサイズ上限を20MBに変更しました。
 
 ## [Version 1.2.3](https://github.com/skyway/skyway-ios-sdk/releases/tag/v1.2.3)
 
 ### Fixed
 
-- `SKW_ROOM_EVENT_PEER_JOIN` または`SKW_ROOM_EVENT_CLOSE` イベントの発火時にクラッシュする不具合を修正しました
-- `SKW_ROOM_EVENT_PEER_JOIN`イベントでpeerIDが取得できない不具合を修正しました
+- `SKW_ROOM_EVENT_PEER_JOIN` または`SKW_ROOM_EVENT_CLOSE` イベントの発火時にクラッシュする不具合を修正しました。
+- `SKW_ROOM_EVENT_PEER_JOIN`イベントでpeerIDが取得できない不具合を修正しました。
 
 ## [Version 1.2.2](https://github.com/skyway/skyway-ios-sdk/releases/tag/v1.2.2)
 
