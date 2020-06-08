@@ -2,6 +2,12 @@
 
 [English](./release-notes.en.md)
 
+## [Version 2.0.0](https://github.com/skyway/skyway-ios-sdk/releases/tag/v2.0.0)
+
+- `MeshRoom`, `SFURoom`の`send`関数を使用してデータを送信する際、その送信間隔に制限を設けました。
+  - 連続してデータを送信する頻度は 100 ミリ秒に 1 回までに制限されます。
+  - 制限を超えたデータはキューイングされ、100 ミリ秒ごとに順次送信されます。
+
 ## [Version 1.3.0](https://github.com/skyway/skyway-ios-sdk/releases/tag/v1.3.0)
 
 ### Added
