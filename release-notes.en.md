@@ -2,6 +2,12 @@
 
 [日本語](./release-notes.md)
 
+## [Version 2.0.1](https://github.com/skyway/skyway-ios-sdk/releases/tag/v2.0.1)
+
+### Fixed
+
+- Addressed a vulnerability in SCTP.
+
 ## [Version 2.0.0](https://github.com/skyway/skyway-ios-sdk/releases/tag/v2.0.0)
 
 ### Breaking Changes
