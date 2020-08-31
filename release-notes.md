@@ -2,6 +2,12 @@
 
 [English](./release-notes.en.md)
 
+## [Version 3.0.0](https://github.com/skyway/skyway-ios-sdk/releases/tag/v3.0.0)
+
+### Modified
+
+- 対象OSを iOS 10.0以上に変更しました。
+
 ## [Version 2.0.1](https://github.com/skyway/skyway-ios-sdk/releases/tag/v2.0.1)
 
 ### Fixed
