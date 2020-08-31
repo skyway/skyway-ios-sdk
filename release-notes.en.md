@@ -4,7 +4,7 @@
 
 ## [Version 3.0.0](https://github.com/skyway/skyway-ios-sdk/releases/tag/v3.0.0)
 
-### Fixed
+### Breaking Changes
 
 - The target OS has been changed to iOS 10.0 or higher.
 
