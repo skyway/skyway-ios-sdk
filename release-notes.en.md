@@ -7,6 +7,7 @@
 ### Breaking Changes
 
 - The target OS has been changed to iOS 10.0 or higher.
+- Updated internal libraries to improve stability.
 
 ## [Version 2.0.1](https://github.com/skyway/skyway-ios-sdk/releases/tag/v2.0.1)
 
