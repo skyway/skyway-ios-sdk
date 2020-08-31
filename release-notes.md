@@ -7,6 +7,7 @@
 ### Breaking Changes
 
 - 対象OSを iOS 10.0以上に変更しました。
+- 内部ライブラリのアップデートを行い、安定性を向上させました。
 
 ## [Version 2.0.1](https://github.com/skyway/skyway-ios-sdk/releases/tag/v2.0.1)
 
