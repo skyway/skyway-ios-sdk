@@ -1,4 +1,4 @@
-platform :ios,'9.0'
+platform :ios,'10.0'
 use_frameworks!
 
 def install_pods
@@ -8,4 +8,3 @@ end
 target 'swift_skyway' do
   install_pods
 end
-
