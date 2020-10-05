@@ -5,7 +5,7 @@
 ## [Version 3.0.1](https://github.com/skyway/skyway-ios-sdk/releases/tag/v3.0.1)
 
 ### Fixed
-- 通信状態が不安定等の利用により、ICE Connectionが一時的な切断状態になった場合に、再接続する可能性があるのにも関わらず切断処理をしてしまっていた不具合を修正しました。
+- 通信状態が不安定等の理由により、ICE Connectionが一時的な切断状態になった場合に、再接続接続を行わずに切断処理をしていた不具合を修正しました。
 
 ## [Version 3.0.0](https://github.com/skyway/skyway-ios-sdk/releases/tag/v3.0.0)
 

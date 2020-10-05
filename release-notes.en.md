@@ -5,7 +5,7 @@
 ## [Version 3.0.1](https://github.com/skyway/skyway-ios-sdk/releases/tag/v3.0.1)
 
 ### Fixed
-- Fixed a bug in which the ICE Connection was disconnecting when the ICE Connection was temporarily disconnected due to communication instability and other reasons, even though there was a possibility of reconnecting.
+- Fixed a problem in which the ICE Connection was disconnecting without reconnecting when the ICE Connection was temporarily disconnected due to communication instability or other reasons.
 
 ## [Version 3.0.0](https://github.com/skyway/skyway-ios-sdk/releases/tag/v3.0.0)
 
