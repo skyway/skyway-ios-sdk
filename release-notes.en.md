@@ -5,7 +5,7 @@
 ## [Version 3.0.1](https://github.com/skyway/skyway-ios-sdk/releases/tag/v3.0.1)
 
 ### Fixed
-- Fixed a problem in which the ICE Connection was disconnected without reconnecting when the ICE Connection was temporarily disconnected due to communication instability or other reasons.
+- Fixed to automatically try to reconnect when WebRTC communication is temporarily disconnected due to unstable communication.
 
 ## [Version 3.0.0](https://github.com/skyway/skyway-ios-sdk/releases/tag/v3.0.0)
 
