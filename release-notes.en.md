@@ -5,7 +5,7 @@
 ## [Version 3.0.1](https://github.com/skyway/skyway-ios-sdk/releases/tag/v3.0.1)
 
 ### Fixed
-- Fixed to automatically try to reconnect when WebRTC communication is temporarily disconnected due to unstable communication.
+- Fixed to automatically try to reconnect when WebRTC communication state is temporarily disconnected due to unstable communication.
 
 ## [Version 3.0.0](https://github.com/skyway/skyway-ios-sdk/releases/tag/v3.0.0)
 
