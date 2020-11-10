@@ -28,7 +28,7 @@ class MediaConnectionViewController: UIViewController {
     
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
-        self.mediaConnection?.close()
+        self.mediaConnection?.close(true)
         self.peer?.destroy()
     }
 
@@ -48,7 +48,7 @@ class MediaConnectionViewController: UIViewController {
     }
 
     @IBAction func tapEndCall(){
-        self.mediaConnection?.close()
+        self.mediaConnection?.close(true)
         self.changeConnectionStatusUI(connected: false)
     }
 
