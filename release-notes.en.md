@@ -2,6 +2,14 @@
 
 [日本語](./release-notes.md)
 
+## [Version 3.1.0](https://github.com/skyway/skyway-ios-sdk/releases/tag/v3.1.0)
+
+### Added
+- Add an `forceClose` option when calling `SKWMediaConnection`, `SKWDataConnection` to signal intention to disconnection to the remote peer instantly.
+
+### Deprecated
+- The `NO` default value of `forceClose` is deprecated and may be changed to `YES` in future versions.
+
 ## [Version 3.0.1](https://github.com/skyway/skyway-ios-sdk/releases/tag/v3.0.1)
 
 ### Fixed

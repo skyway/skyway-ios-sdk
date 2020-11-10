@@ -2,6 +2,14 @@
 
 [English](./release-notes.en.md)
 
+## [Version 3.1.0](https://github.com/skyway/skyway-ios-sdk/releases/tag/v3.1.0)
+### Added
+- `SKWMediaConnection`, `SKWDataConnection` に `forceClose` オプションを追加しました。このオプションを有効にすると、接続相手においても各 `Connection` が即座にクローズします。
+
+### Deprecated
+- `forceClose` のデフォルト値 `NO` は将来のバージョンでは `YES` に変更される可能性があります。
+
+
 ## [Version 3.0.1](https://github.com/skyway/skyway-ios-sdk/releases/tag/v3.0.1)
 
 ### Fixed
