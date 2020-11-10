@@ -9,7 +9,6 @@
 ### Deprecated
 - `forceClose` のデフォルト値 `NO` は将来のバージョンでは `YES` に変更される可能性があります。
 
-
 ## [Version 3.0.1](https://github.com/skyway/skyway-ios-sdk/releases/tag/v3.0.1)
 
 ### Fixed
