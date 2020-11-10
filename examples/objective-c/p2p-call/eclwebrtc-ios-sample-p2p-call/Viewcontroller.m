@@ -327,7 +327,7 @@ typedef NS_ENUM(NSInteger, CallState){
         //
         
         [self closeRemoteStream];
-        [_mediaConnection close];
+        [_mediaConnection close:YES];
         [_signalingChannel close];
         _callState = CALL_STATE_TERMINATED;
         [self updateActionButtonTitle];

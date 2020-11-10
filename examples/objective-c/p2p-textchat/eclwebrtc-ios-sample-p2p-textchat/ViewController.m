@@ -285,7 +285,7 @@ static NSString *const kDomain = @"yourDomain";
         // Close a DataConnection
         //
         
-        [_dataConnection close];
+        [_dataConnection close:YES];
         _dataConnection = nil;
     }
 }
