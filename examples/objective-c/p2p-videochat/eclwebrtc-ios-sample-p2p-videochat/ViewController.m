@@ -190,7 +190,7 @@ static NSString *const kDomain = @"yourDomain";
         [_remoteStream removeVideoRenderer:_remoteView track:0];
     }
     
-    [_remoteStream close];
+    [_remoteStream close:YES];
     _remoteStream = nil;
 }
 

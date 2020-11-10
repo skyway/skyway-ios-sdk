@@ -43,7 +43,7 @@ class DataConnectionViewController: UIViewController {
     
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
-        self.dataConnection?.close()
+        self.dataConnection?.close(true)
         self.peer?.disconnect()
         self.peer?.destroy()
     }
@@ -64,7 +64,7 @@ class DataConnectionViewController: UIViewController {
     }
     
     @IBAction func tapEndCall(){
-        self.dataConnection?.close()
+        self.dataConnection?.close(true)
         self.changeConnectionStatusUI(connected: false)
     }
     

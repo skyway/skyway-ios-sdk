@@ -163,7 +163,7 @@ typedef NS_ENUM(NSInteger, CallState){
         [self closeRemoteStream];
         [self unsetMediaCallbacks];
         self->_mediaConnection = nil;
-        [self->_signalingChannel close];
+        [self->_signalingChannel close:YES];
         self->_callState = CALL_STATE_TERMINATED;
         [self updateActionButtonTitle];
 
@@ -194,14 +194,14 @@ typedef NS_ENUM(NSInteger, CallState){
         NSLog(@"[On/Data] %@", message);
         
         if ([message isEqualToString:@"reject"]) {
-            [self->_mediaConnection close];
-            [self->_signalingChannel close];
+            [self->_mediaConnection close:YES];
+            [self->_signalingChannel close:YES];
             self->_callState = CALL_STATE_TERMINATED;
             [self updateActionButtonTitle];
         }
         else if ([message isEqualToString:@"cancel"]) {
-            [self->_mediaConnection close];
-            [self->_signalingChannel close];
+            [self->_mediaConnection close:YES];
+            [self->_signalingChannel close:YES];
             self->_callState = CALL_STATE_TERMINATED;
             [self updateActionButtonTitle];
             [self dismissIncomingCallAlert];
@@ -327,8 +327,8 @@ typedef NS_ENUM(NSInteger, CallState){
         //
         
         [self closeRemoteStream];
-        [_mediaConnection close];
-        [_signalingChannel close];
+        [_mediaConnection close:YES];
+        [_signalingChannel close:YES];
         _callState = CALL_STATE_TERMINATED;
         [self updateActionButtonTitle];
         
