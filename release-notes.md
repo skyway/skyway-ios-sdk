@@ -2,16 +2,24 @@
 
 [English](./release-notes.en.md)
 
+## [Version 3.2.0](https://github.com/skyway/skyway-ios-sdk/releases/tag/v3.2.0) - 2020-11-16
+### Added
+
+- Peer オプションに `tryReconnectMedia` と `tryReconnectData` のオプションを追加しました。このオプションを有効にすることで、WebRTC通信が一時的な切断状態になった場合に自動再接続を試行するようになります。デフォルトではこのオプションは無効です。
+
 ## [Version 3.1.0](https://github.com/skyway/skyway-ios-sdk/releases/tag/v3.1.0) - 2020-11-02
 ### Added
+
 - `SKWMediaConnection`, `SKWDataConnection` に `forceClose` オプションを追加しました。このオプションを有効にすると、接続相手においても各 `Connection` が即座にクローズします。
 
 ### Deprecated
+
 - `forceClose` のデフォルト値 `NO` は将来のバージョンでは `YES` に変更される可能性があります。
 
 ## [Version 3.0.1](https://github.com/skyway/skyway-ios-sdk/releases/tag/v3.0.1) - 2020-10-05
 
 ### Fixed
+
 - 通信状態が不安定等の理由により、WebRTC通信が一時的な切断状態になった場合に、自動で再接続を試行するように修正しました。
 
 ## [Version 3.0.0](https://github.com/skyway/skyway-ios-sdk/releases/tag/v3.0.0) - 2020-08-31
