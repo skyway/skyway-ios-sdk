@@ -2,6 +2,11 @@
 
 [日本語](./release-notes.md)
 
+## [Version 3.3.0](https://github.com/skyway/skyway-ios-sdk/releases/tag/v3.3.0) - 2020-12-22
+### Added
+
+- Added `fetchPeerExists` API to fetch whether a peer exists. You can call this API once per second per peer.
+
 ## [Version 3.2.0](https://github.com/skyway/skyway-ios-sdk/releases/tag/v3.2.0) - 2020-11-16
 
 ### Added
