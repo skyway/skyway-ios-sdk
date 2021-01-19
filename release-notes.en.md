@@ -2,6 +2,12 @@
 
 [日本語](./release-notes.md)
 
+## [Version 3.4.0](https://github.com/skyway/skyway-ios-sdk/releases/tag/v3.4.0) - 2021-01-19
+
+### Fixed
+
+- Fixed a connecting process to signaling server so that `Peer` would reconnect when a request to the dispatcher server failed.
+
 ## [Version 3.3.0](https://github.com/skyway/skyway-ios-sdk/releases/tag/v3.3.0) - 2020-12-22
 ### Added
 
