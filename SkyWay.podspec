@@ -9,7 +9,7 @@ SkyWay simplifies peer-to-peer data, video, and audio calls using WebRTC.
   s.homepage         = 'https://webrtc.ecl.ntt.com'
   s.license          = { :type => 'Apache License', :file => 'LICENSE.txt' }
   s.author           = { 'NTT Communications' => 'skyway@ntt.com' }
-  s.source           = { :http => 'https://github.com/skyway/skyway-ios-sdk/releases/download/v3.3.0/SkyWay_iOS_3..0.zip', :flatten => true }
+  s.source           = { :http => 'https://github.com/skyway/skyway-ios-sdk/releases/download/v3.4.0/SkyWay_iOS_3.4.0.zip', :flatten => true }
   s.ios.deployment_target = '10.0'
   s.vendored_frameworks = 'SkyWay.framework'
   s.source_files  = 'SkyWay.framework/Headers/*.h'
