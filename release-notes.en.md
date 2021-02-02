@@ -2,6 +2,12 @@
 
 [日本語](./release-notes.md)
 
+## [Version 3.5.0](https://github.com/skyway/skyway-ios-sdk/releases/tag/v3.5.0) - 2021-02-02
+
+### Changed
+
+- Changed `dataChannel.send()` interval so that multiple data can be transmitted without delay even when those data are continuously transmitted at an intervals of less than 100 msec.
+
 ## [Version 3.4.0](https://github.com/skyway/skyway-ios-sdk/releases/tag/v3.4.0) - 2021-01-19
 
 ### Fixed
