@@ -138,11 +138,6 @@ static NSString *const kDomain = @"yourDomain";
         NSLog(@"SKW_ROOM_EVENT_STREAM: %@", stream);
         [self->_collectionViewController addMediaStream:stream];
     }];
-    [_sfuRoom on:SKW_ROOM_EVENT_REMOVE_STREAM callback:^(NSObject* arg) {
-        SKWMediaStream* stream = (SKWMediaStream*)arg;
-        NSLog(@"SKW_ROOM_EVENT_REMOVE_STREAM: %@", stream);
-        [self->_collectionViewController removeMediaStream:stream];
-    }];
     [_sfuRoom on:SKW_ROOM_EVENT_PEER_JOIN callback:^(NSObject* arg) {
         NSString* peerId_ = (NSString*)arg;
         NSLog(@"SKW_ROOM_EVENT_PEER_JOIN: %@", peerId_);
