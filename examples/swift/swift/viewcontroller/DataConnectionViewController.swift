@@ -44,7 +44,6 @@ class DataConnectionViewController: UIViewController {
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         self.dataConnection?.close(true)
-        self.peer?.disconnect()
         self.peer?.destroy()
     }
 

@@ -75,7 +75,6 @@ static NSString *const kDomain = @"yourDomain";
         self->_peer = nil;
     }];
     
-    [_peer on:SKW_PEER_EVENT_DISCONNECTED callback:^(NSObject* obj) {}];
     [_peer on:SKW_PEER_EVENT_ERROR callback:^(NSObject* obj) {}];
     
 }
