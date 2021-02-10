@@ -77,7 +77,6 @@ static NSString *const kDomain = @"yourDomain";
     }];
     
     [_peer on:SKW_PEER_EVENT_CLOSE callback:^(NSObject* obj) {}];
-    [_peer on:SKW_PEER_EVENT_DISCONNECTED callback:^(NSObject* obj) {}];
     [_peer on:SKW_PEER_EVENT_ERROR callback:^(NSObject* obj) {}];
     
 }
@@ -161,7 +160,6 @@ static NSString *const kDomain = @"yourDomain";
     [_peer on:SKW_PEER_EVENT_CONNECTION callback:nil];
     [_peer on:SKW_PEER_EVENT_CALL callback:nil];
     [_peer on:SKW_PEER_EVENT_CLOSE callback:nil];
-    [_peer on:SKW_PEER_EVENT_DISCONNECTED callback:nil];
     [_peer on:SKW_PEER_EVENT_ERROR callback:nil];
 }
 
@@ -190,7 +188,7 @@ static NSString *const kDomain = @"yourDomain";
         [_remoteStream removeVideoRenderer:_remoteView track:0];
     }
     
-    [_remoteStream close:YES];
+    [_remoteStream close];
     _remoteStream = nil;
 }
 
