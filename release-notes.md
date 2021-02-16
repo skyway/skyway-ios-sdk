@@ -2,6 +2,14 @@
 
 [English](./release-notes.en.md)
 
+## [Version 3.6.0](https://github.com/skyway/skyway-ios-sdk/releases/tag/v3.6.0) - 2021-02-16
+
+### Deprecated
+- `SKWPeer`の`reconnect`メソッドを非推奨にしました。代わりに`SKWPeer`の再作成を推奨します。
+- `SKWPeer`の`disconnect`メソッドを非推奨にしました。代わりに`SKWPeer`の`destroy`メソッドの使用を推奨します。
+- `SKWPeerEventEnum`の`DISCONNECTED`イベントを非推奨にしました。代わりに`SKWPeerEventEnum`の`CLOSE`イベントの使用を推奨します。
+- `SKWRoomEventEnum`の`REMOVE_STREAM`イベントを非推奨にしました。代わりに`SKWRoomEventEnum`の`PEER_LEAVE`イベントの使用を推奨します。
+
 ## [Version 3.5.0](https://github.com/skyway/skyway-ios-sdk/releases/tag/v3.5.0) - 2021-02-02
 
 ### Changed

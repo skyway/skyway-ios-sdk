@@ -2,6 +2,15 @@
 
 [日本語](./release-notes.md)
 
+## [Version 3.6.0](https://github.com/skyway/skyway-ios-sdk/releases/tag/v3.6.0) - 2021-02-16
+
+### Deprecated
+
+- Deprecated `reconnect` method of `SKWPeer`. Recreate `SKWPeer` instance instead.
+- Deprecated `disconnect` method of `SKWPeer`. Use `disconnect` method of `SKWPeer` instead.
+- Deprecated `DISCONNECTED` event of `SKWPeerEventEnum`. Use `CLOSE` event of `SKWPeerEventEnum` instead.
+- Deprecated `REMOVE_STREAM` event of `SKWRoomEventEnum`. Use `PEER_LEAVE` evnet of `SKWRoomEventEnum` instead.
+
 ## [Version 3.5.0](https://github.com/skyway/skyway-ios-sdk/releases/tag/v3.5.0) - 2021-02-02
 
 ### Changed
