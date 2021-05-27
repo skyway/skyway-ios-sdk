@@ -2,6 +2,20 @@
 
 [日本語](./release-notes.md)
 
+## [Version 4.0.0](https://github.com/skyway/skyway-ios-sdk/releases/tag/v4.0.0) - 2021-05-27
+
+### Breaking Changed
+
+- Updated internal WebRTC libraries to improve stability.
+  - This version fails to negotiate and communicate with Chrome 71 or earlier, Android SDK v1.0.6 or earlier, iOS SDK v1.0.6 or earlier, and WebRTC Gateway v0.1.0 or earlier.
+ ([Ref](https://support.skyway.io/hc/articles/900005631283))
+
+### Fixed
+
+- Fixed a bug that various operations did not work properly when the `Peer` automatically reconnected to a signaling server.
+- Fixed a bug that after updating a credential used for Peer authentication, caused a `Peer` uses old credential when it automatically reconnected to a signaling server.
+- Enhanced security.
+
 ## [Version 3.6.0](https://github.com/skyway/skyway-ios-sdk/releases/tag/v3.6.0) - 2021-02-16
 
 ### Deprecated
