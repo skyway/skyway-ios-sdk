@@ -2,22 +2,29 @@
 
 [English](./release-notes.en.md)
 
+## [Version 4.0.1](https://github.com/skyway/skyway-ios-sdk/releases/tag/v4.0.1) - 2022-03-16
+
+### Fixed
+
+- レイアウトを変更すると `SKWVideo` 内の `RTCEAGLVideoView` のフレームサイズが正しくならない場合がある不具合を修正しました。
 
 ## [Version 4.0.0](https://github.com/skyway/skyway-ios-sdk/releases/tag/v4.0.0) - 2021-05-27
+
 ### Breaking Changed
 
-- 内部で利用しているWebRTCライブラリを更新し、動作の安定性を向上させました。
-  - Chrome71以前、iOS/Android SDK 1.0.6以前、WebRTC Gateway v0.1.0以前との疎通ができなくなります。 ([参考](https://support.skyway.io/hc/articles/900005631283))
+- 内部で利用している WebRTC ライブラリを更新し、動作の安定性を向上させました。
+  - Chrome71 以前、iOS/Android SDK 1.0.6 以前、WebRTC Gateway v0.1.0 以前との疎通ができなくなります。 ([参考](https://support.skyway.io/hc/articles/900005631283))
 
 ### Fixed
 
 - `Peer` がシグナリングサーバと自動再接続した際に、各種操作が正常に動作しない不具合を修正しました。
-- Peer認証に利用されるCredentialの更新後に `Peer` がシグナリングサーバと自動再接続する際に、更新前の `Credential` を利用してしまう不具合を修正しました。
+- Peer 認証に利用される Credential の更新後に `Peer` がシグナリングサーバと自動再接続する際に、更新前の `Credential` を利用してしまう不具合を修正しました。
 - セキュリティの強化を実施しました。
 
 ## [Version 3.6.0](https://github.com/skyway/skyway-ios-sdk/releases/tag/v3.6.0) - 2021-02-16
 
 ### Deprecated
+
 - `SKWPeer`の`reconnect`メソッドを非推奨にしました。代わりに`SKWPeer`の再作成を推奨します。
 - `SKWPeer`の`disconnect`メソッドを非推奨にしました。代わりに`SKWPeer`の`destroy`メソッドの使用を推奨します。
 - `SKWPeerEventEnum`の`DISCONNECTED`イベントを非推奨にしました。代わりに`SKWPeerEventEnum`の`CLOSE`イベントの使用を推奨します。
@@ -26,7 +33,8 @@
 ## [Version 3.5.0](https://github.com/skyway/skyway-ios-sdk/releases/tag/v3.5.0) - 2021-02-02
 
 ### Changed
-- `dataChannel.send`の送信間隔を変更し、100msec未満の間隔で連続送信する際も遅延なくデータの送信を行うことができるようになりました。
+
+- `dataChannel.send`の送信間隔を変更し、100msec 未満の間隔で連続送信する際も遅延なくデータの送信を行うことができるようになりました。
 
 ## [Version 3.4.0](https://github.com/skyway/skyway-ios-sdk/releases/tag/v3.4.0) - 2021-01-19
 
@@ -35,22 +43,25 @@
 - シグナリングサーバへの接続プロセスを修正し、`Peer` からディスパッチャーサーバへのリクエストが失敗した場合に再接続するようにしました。
 
 ## [Version 3.3.0](https://github.com/skyway/skyway-ios-sdk/releases/tag/v3.3.0) - 2020-12-22
+
 ### Added
 
-- Peerの存在を確認することができる `fetchPeerExistsWithPeerId` メソッドを追加しました。1秒に1回利用することが可能です。
+- Peer の存在を確認することができる `fetchPeerExistsWithPeerId` メソッドを追加しました。1 秒に 1 回利用することが可能です。
 
 ### Fixed
 
-- PeerIDを指定せずに生成したPeerが、モバイル端末のネットワーク切断等でシグナリングサーバと自動再接続する際に、PeerIDが変わってしまう不具合を修正しました。
-- APIキー認証 (Peer認証) に使用されるCredentialの更新後にPeerがシグナリングサーバと自動再接続する際、再接続に失敗する不具合を修正しました。
-- Peerがシグナリングサーバと自動再接続する際に、Peerのopenイベントが再発火する不具合を修正しました。
+- PeerID を指定せずに生成した Peer が、モバイル端末のネットワーク切断等でシグナリングサーバと自動再接続する際に、PeerID が変わってしまう不具合を修正しました。
+- API キー認証 (Peer 認証) に使用される Credential の更新後に Peer がシグナリングサーバと自動再接続する際、再接続に失敗する不具合を修正しました。
+- Peer がシグナリングサーバと自動再接続する際に、Peer の open イベントが再発火する不具合を修正しました。
 
 ## [Version 3.2.0](https://github.com/skyway/skyway-ios-sdk/releases/tag/v3.2.0) - 2020-11-16
+
 ### Added
 
-- Peer オプションに `tryReconnectMedia` と `tryReconnectData` のオプションを追加しました。このオプションを有効にすることで、WebRTC通信が一時的な切断状態になった場合に自動再接続を試行するようになります。デフォルトではこのオプションは無効です。
+- Peer オプションに `tryReconnectMedia` と `tryReconnectData` のオプションを追加しました。このオプションを有効にすることで、WebRTC 通信が一時的な切断状態になった場合に自動再接続を試行するようになります。デフォルトではこのオプションは無効です。
 
 ## [Version 3.1.0](https://github.com/skyway/skyway-ios-sdk/releases/tag/v3.1.0) - 2020-11-02
+
 ### Added
 
 - `SKWMediaConnection`, `SKWDataConnection` に `forceClose` オプションを追加しました。このオプションを有効にすると、接続相手においても各 `Connection` が即座にクローズします。
@@ -63,20 +74,20 @@
 
 ### Fixed
 
-- 通信状態が不安定等の理由により、WebRTC通信が一時的な切断状態になった場合に、自動で再接続を試行するように修正しました。
+- 通信状態が不安定等の理由により、WebRTC 通信が一時的な切断状態になった場合に、自動で再接続を試行するように修正しました。
 
 ## [Version 3.0.0](https://github.com/skyway/skyway-ios-sdk/releases/tag/v3.0.0) - 2020-08-31
 
 ### Breaking Changes
 
-- 対象OSを iOS 10.0以上に変更しました。
+- 対象 OS を iOS 10.0 以上に変更しました。
 - 内部ライブラリのアップデートを行い、安定性を向上させました。
 
 ## [Version 2.0.1](https://github.com/skyway/skyway-ios-sdk/releases/tag/v2.0.1) - 2020-06-30
 
 ### Fixed
 
-- SCTPに関する脆弱性への対応を行いました。
+- SCTP に関する脆弱性への対応を行いました。
 
 ## [Version 2.0.0](https://github.com/skyway/skyway-ios-sdk/releases/tag/v2.0.0) - 2020-06-09
 
@@ -98,14 +109,14 @@
 
 ### Modified
 
-- `SKWMeshRoom`, `SKWSFURoom`の`send`関数において、送信可能なデータのサイズ上限を20MBに変更しました。
+- `SKWMeshRoom`, `SKWSFURoom`の`send`関数において、送信可能なデータのサイズ上限を 20MB に変更しました。
 
 ## [Version 1.2.3](https://github.com/skyway/skyway-ios-sdk/releases/tag/v1.2.3) - 2020-01-30
 
 ### Fixed
 
 - `SKW_ROOM_EVENT_PEER_JOIN` または`SKW_ROOM_EVENT_CLOSE` イベントの発火時にクラッシュする不具合を修正しました。
-- `SKW_ROOM_EVENT_PEER_JOIN`イベントでpeerIDが取得できない不具合を修正しました。
+- `SKW_ROOM_EVENT_PEER_JOIN`イベントで peerID が取得できない不具合を修正しました。
 
 ## [Version 1.2.2](https://github.com/skyway/skyway-ios-sdk/releases/tag/v1.2.2) - 2019-12-18
 
@@ -117,37 +128,37 @@
 
 ### Fixed
 
-- SKWMediaStreamをcloseした時にクラッシュする不具合を修正しました。
+- SKWMediaStream を close した時にクラッシュする不具合を修正しました。
 
 ## [Version 1.2.0](https://github.com/skyway/skyway-ios-sdk/releases/tag/v1.2.0) - 2019-05-20
 
 ### Added
 
-- SKWVideoがAutoLayoutに対応しました。
+- SKWVideo が AutoLayout に対応しました。
 - `SKWVideoScalingEnum`として以下の列挙子を追加しました。
   - `SKW_VIDEO_SCALING_ASPECT_FIT`
   - `SKW_VIDEO_SCALING_ASPECT_FILL`
 
 ### Fixed
 
-- cameraPositionの値に関わらずフロントカメラが選択される不具合を修正しました。
+- cameraPosition の値に関わらずフロントカメラが選択される不具合を修正しました。
 
 ## [Version 1.1.1](https://github.com/skyway/skyway-ios-sdk/releases/tag/v1.1.1) - 2019-04-09
 
 ### Modified
 
-- API認証エラー発生を示すSKW_PEER_ERR_AUTHENTICATIONをPeerErrorに追加しました。
-- SKWPeerクラスにSDKのバージョン確認用のメソッド`(nonnull NSString*)sdkVersion`を追加しました。
+- API 認証エラー発生を示す SKW_PEER_ERR_AUTHENTICATION を PeerError に追加しました。
+- SKWPeer クラスに SDK のバージョン確認用のメソッド`(nonnull NSString*)sdkVersion`を追加しました。
 
 ### Fixed
 
-- v1.1.0にてAPI認証に失敗する不具合を修正しました。
+- v1.1.0 にて API 認証に失敗する不具合を修正しました。
 
 ## [Version 1.1.0](https://github.com/skyway/skyway-ios-sdk/releases/tag/v1.1.0) - 2019-03-18
 
 ### Modified
 
-- 対象OSを iOS 9.0以上に変更しました。
+- 対象 OS を iOS 9.0 以上に変更しました。
 
 ### Fixed
 
@@ -157,49 +168,49 @@
 
 ### Fixed
 
-- v.1.0.5とは別の要因により、サーバへの接続失敗時に稀にクラッシュする不具合を解消しました。
+- v.1.0.5 とは別の要因により、サーバへの接続失敗時に稀にクラッシュする不具合を解消しました。
 
 ## [Version 1.0.5](https://github.com/skyway/skyway-ios-sdk/releases/tag/v1.0.5) - 2018-08-09
 
 ### Fixed
 
 - サーバへの接続失敗時に稀にクラッシュする不具合を解消しました。
-- getAudioTrack実行時に正常にTrack数が取得出来ない不具合を解消しました。
+- getAudioTrack 実行時に正常に Track 数が取得出来ない不具合を解消しました。
 
 ## [Version 1.0.4](https://github.com/skyway/skyway-ios-sdk/releases/tag/v1.0.4) - 2018-04-10
 
 ### Fixed
 
-- disconnectメソッド後にdestroyメソッドを呼ぶとクラッシュする不具合を解消しました。
-- switchCameraメソッドが動作しない不具合を解消しました。
+- disconnect メソッド後に destroy メソッドを呼ぶとクラッシュする不具合を解消しました。
+- switchCamera メソッドが動作しない不具合を解消しました。
 
 ## [Version 1.0.3](https://github.com/skyway/skyway-ios-sdk/releases/tag/v1.0.3) - 2018-03-16
 
 ### Added
 
 - bitcode を有効化しました。
-- 1つのstreamを同時に複数のSKWVideo viewにレンダリングできるよう対応しました。
+- 1 つの stream を同時に複数の SKWVideo view にレンダリングできるよう対応しました。
 
 ### Fixed
 
-- reconnectメソッドが正しく動作しない不具合を解消しました。
-- listAllPeersメソッドのAPIエラー時の不具合を解消しました。
-- DataConnectionのメモリリークを解消しました。
-- DataConnectionの確立時にクラッシュする事がある不具合を解消しました。
-- MeshRoomから退室後、再入室できない事がある不具合を解消しました。
-- SFURoomで`SKW_ROOM_EVENT_REMOVE_STREAM` が発火しない不具合を解消しました。
+- reconnect メソッドが正しく動作しない不具合を解消しました。
+- listAllPeers メソッドの API エラー時の不具合を解消しました。
+- DataConnection のメモリリークを解消しました。
+- DataConnection の確立時にクラッシュする事がある不具合を解消しました。
+- MeshRoom から退室後、再入室できない事がある不具合を解消しました。
+- SFURoom で`SKW_ROOM_EVENT_REMOVE_STREAM` が発火しない不具合を解消しました。
 
 ## [Version 1.0.2](https://github.com/skyway/skyway-ios-sdk/releases/tag/v1.0.2) - 2017-10-20
 
 ### Fixed
 
-- IPv6環境下での動作不具合を解消しました。
+- IPv6 環境下での動作不具合を解消しました。
 
 ## [Version 1.0.1](https://github.com/skyway/skyway-ios-sdk/releases/tag/v1.0.1) - 2017-09-15
 
 ### Fixed
 
-- Media/DataConnectionクラスのmetadataオプションが設定されない不具合を解消しました。
+- Media/DataConnection クラスの metadata オプションが設定されない不具合を解消しました。
 
 ## [Version 1.0.0](https://github.com/skyway/skyway-ios-sdk/releases/tag/v1.0.0) - 2017-09-06
 

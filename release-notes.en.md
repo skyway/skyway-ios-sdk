@@ -2,13 +2,19 @@
 
 [日本語](./release-notes.md)
 
+## [Version 4.0.1](https://github.com/skyway/skyway-ios-sdk/releases/tag/v4.0.1) - 2022-03-16
+
+### Fixed
+
+- Fixed a bug that the frame size of `RTCEAGLVideoView` in `SKWVideo` might be incorrect after changing the layout.
+
 ## [Version 4.0.0](https://github.com/skyway/skyway-ios-sdk/releases/tag/v4.0.0) - 2021-05-27
 
 ### Breaking Changed
 
 - Updated internal WebRTC libraries to improve stability.
   - This version fails to negotiate and communicate with Chrome 71 or earlier, Android SDK v1.0.6 or earlier, iOS SDK v1.0.6 or earlier, and WebRTC Gateway v0.1.0 or earlier.
- ([Ref](https://support.skyway.io/hc/articles/900005631283))
+    ([Ref](https://support.skyway.io/hc/articles/900005631283))
 
 ### Fixed
 
@@ -38,6 +44,7 @@
 - Fixed a connecting process to signaling server so that `Peer` would reconnect when a request to the dispatcher server failed.
 
 ## [Version 3.3.0](https://github.com/skyway/skyway-ios-sdk/releases/tag/v3.3.0) - 2020-12-22
+
 ### Added
 
 - Added `fetchPeerExistsWithPeerId` API to fetch whether a peer exists. You can call this API once per second per peer.
@@ -102,6 +109,7 @@
 - Fixed a bug that error occurs when many users `Peer.joinRoom` at the same time in Mesh room.
 
 ### Modified
+
 - Changed the max size of data to 20MB when calling `SKWMeshRoom.send` or `SKWSFURoom.send`.
 
 ## [Version 1.2.3](https://github.com/skyway/skyway-ios-sdk/releases/tag/v1.2.3) - 2020-01-30
@@ -144,6 +152,7 @@
 - Added method `sdkVersion` for checking the SDK version to the SKWPeer class.
 
 ### Fixed
+
 - Fixed a bug that API authentication fails in v1.1.0.
 
 ## [Version 1.1.0](https://github.com/skyway/skyway-ios-sdk/releases/tag/v1.1.0) - 2019-03-18
