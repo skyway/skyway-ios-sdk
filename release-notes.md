@@ -2,6 +2,11 @@
 
 [English](./release-notes.en.md)
 
+## [Version 4.0.1](https://github.com/skyway/skyway-ios-sdk/releases/tag/v4.0.1) - 2022-03-16
+
+### Fixed
+
+- レイアウトを変更すると `SKWVideo` 内の `RTCEAGLVideoView` のフレームサイズが正しくならない場合がある不具合を修正しました。
 
 ## [Version 4.0.0](https://github.com/skyway/skyway-ios-sdk/releases/tag/v4.0.0) - 2021-05-27
 ### Breaking Changed
