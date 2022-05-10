@@ -2,6 +2,12 @@
 
 [日本語](./release-notes.md)
 
+## [Version 4.1.0](https://github.com/skyway/skyway-ios-sdk/releases/tag/v4.1.0) - 2022-05-10
+
+### Added
+
+- Added SNI information to the request header when sending a request to the server.
+
 ## [Version 4.0.1](https://github.com/skyway/skyway-ios-sdk/releases/tag/v4.0.1) - 2022-03-16
 
 ### Fixed
