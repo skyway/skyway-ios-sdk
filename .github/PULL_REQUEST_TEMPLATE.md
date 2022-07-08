@@ -14,4 +14,5 @@
 ### Check point
 
 - [ ] Check merge target branch
+- [ ] ( For SkyWay team ) Check that release file is uploaded to CocoaPods
 - [ ] ( For SkyWay team ) This is public repository **Please Check AGAIN** before publish
