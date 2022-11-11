@@ -2,6 +2,14 @@
 
 [English](./release-notes.en.md)
 
+## [Version 5.0.0](https://github.com/skyway/skyway-ios-sdk/releases/tag/v5.0.0) - 2022-11-11
+
+### Breaking Changed
+- 内部で利用しているWebRTCライブラリを更新し、動作の安定性を向上させました。
+  - 対象OSをiOS 11.0以上に変更しました。
+  - bitcodeが廃止されました。アプリケーションのビルド時はbitcodeの設定を無効にする必要があります。
+  - `getStats()` メソッドを利用して取得できる統計情報の構造が一部変更されています。
+
 ## [Version 4.1.1](https://github.com/skyway/skyway-ios-sdk/releases/tag/v4.1.1) - 2022-09-07
 
 ### Fixed
