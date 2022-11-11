@@ -9,7 +9,7 @@ SkyWay simplifies peer-to-peer data, video, and audio calls using WebRTC.
 * [API Reference](https://skyway.github.io/en/ios-reference/)
 
 ### Supported OS
-iOS 10+
+iOS 11+
 
 ## Installation
 
@@ -24,7 +24,7 @@ $ gem install cocoapods
 To integrate SkyWay into your Xcode project using CocoaPods, specify it in your `Podfile`:
 
 ```ruby
-platform :ios, '10.0'
+platform :ios, '11.0'
 use_frameworks!
 
 target '<Your Target Name>' do
@@ -56,7 +56,7 @@ SkyWayは、WebRTCを利用したピア·ツー·ピアのデータ、ビデオ�
 * [API Reference](https://skyway.github.io/ios-reference/)
 
 ### 対応OS
-iOS 10+
+iOS 11+
 
 ## インストール
 
@@ -70,7 +70,7 @@ $ gem install cocoapods
 
 CocoaPodsを使ってSkyWayをXcodeプロジェクトに統合するには、`Podfile`で指定します。
 ```ruby
-platform :ios, '10.0'
+platform :ios, '11.0'
 use_frameworks!
 
 target '<Your Target Name>' do
