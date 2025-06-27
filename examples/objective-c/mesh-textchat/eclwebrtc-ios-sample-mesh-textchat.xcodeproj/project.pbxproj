@@ -125,7 +125,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0940;
-				ORGANIZATIONNAME = "NTT Communications";
+				ORGANIZATIONNAME = "NTT DOCOMO BUSINESS, Inc";
 				TargetAttributes = {
 					71F5AB1F1EEE83F200038449 = {
 						CreatedOnToolsVersion = 8.3.2;
