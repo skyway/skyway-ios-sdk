@@ -128,7 +128,7 @@
 					action,
 				);
 				LastUpgradeCheck = 0940;
-				ORGANIZATIONNAME = "NTT Communications";
+				ORGANIZATIONNAME = "NTT DOCOMO BUSINESS, Inc";
 				TargetAttributes = {
 					7115A6431EE65CEC006D989A = {
 						CreatedOnToolsVersion = 8.3.2;
